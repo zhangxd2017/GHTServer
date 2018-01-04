@@ -1,0 +1,91 @@
+package cn.ght.protocol;
+
+option java_outer_classname = "MessageData";
+
+/* 定义消息类型 */
+enum MSG {
+    //通用协议
+    Login_Request = 10001; //设备登录
+    Login_Response = 10002; //服务器返回设备登录结果
+
+    //模块与服务器协议
+    Power_On_PC_Query = 20001; //服务器向模块发送开机指令
+    Power_On_PC = 20002; //模块向服务器返回开机指令执行结果
+    Report_GPS_Query = 20003; //服务器向模块发送上报GPS指令
+    Report_GPS = 20004; //模块向服务器上报GPS
+
+    //PC与服务器协议
+    FileListQuery = 30001; //服务器向PC发送获取文件系统指令
+    FileList = 30002; //PC向服务器上报文件系统
+    DeleteFileQuery = 30003; //服务器向PC发送删除文件(夹)指令
+    DeleteFile = 30004; //PC向服务器上报删除文件(夹)指令结果
+    PowerOffQuery = 50001; //服务器向PC或者模块发送关机指令
+    PowerOff = 50002; //模块或者PC向服务器回复关机指令
+
+    //移动端与服务器协议
+    GetPCListRequest = 40001;
+    GetPCListResponse = 40002;
+    GetModuleListRequest = 40003;
+    GetModuleListResponse = 40004;
+    SetPowerOnRequest = 40005;
+    SetPowerOnResponse = 40006;
+    GetFileListRequest = 40007;
+    GetFileListResponse = 40008;
+    DeleteFileRequest = 40009;
+    DeleteFileResponse = 40010;
+    GetLocationRequest = 40011;
+    GetLocationResponse = 40012;
+
+}
+
+/* 定义设备类型 模块、PC、Android、iOS */
+enum DEVICE {
+    DeviceAndroid = 1;
+    DeviceIOS = 2;
+    DeviceModule = 3;
+    DevicePC = 4;
+}
+
+/* 设备登录服务器消息 */
+message LoginRequest {
+    required string device_name = 1;
+    required DEVICE device_type = 2;
+}
+
+message LoginResponse {
+    required fixed32 result = 1;
+    optional string reason = 2;
+}
+
+message PowerOnPCQuery {
+
+}
+
+message PowerOnPC {
+    required string device_name = 1;
+    required fixed32 result = 2;
+}
+
+message ReportGPSQuery {
+
+}
+
+message ReportGPS {
+    required string device_name = 1;
+    required double longitude = 2;
+    required double latitude = 3;
+}
+
+message Message {
+    required MSG msg_type = 1;
+    //M
+    optional LoginRequest login_request = 2;
+    optional PowerOnPC power_on_pc = 3;
+    optional ReportGPS report_gps = 4;
+
+    //S
+    optional LoginResponse login_response = 5;
+    optional PowerOnPCQuery power_on_pc_cmd = 6;
+    optional ReportGPSQuery report_gps_cmd = 7;
+}
+
