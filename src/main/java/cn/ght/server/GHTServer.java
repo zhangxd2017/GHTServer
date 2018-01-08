@@ -39,8 +39,8 @@ public class GHTServer {
                     ChannelPipeline p = socketChannel.pipeline();
                     p.addLast(new ProtobufVarint32FrameDecoder());
                     p.addLast(new ProtobufDecoder(MessageData.Message.getDefaultInstance()));
-                    p.addLast(new ProtobufEncoder());
                     p.addLast(new GHTServerHandler());
+                    p.addLast(new ProtobufEncoder());
                 }
             });
             ChannelFuture channelFuture = bootstrap.bind(port).sync();
@@ -51,6 +51,7 @@ public class GHTServer {
         } finally {
             worker.shutdownGracefully();
             boss.shutdownGracefully();
+            System.out.println("----GHT Server Stop----");
         }
     }
 

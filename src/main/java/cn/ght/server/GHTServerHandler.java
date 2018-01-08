@@ -9,7 +9,27 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
 import io.netty.channel.SimpleChannelInboundHandler;
 
+import java.net.SocketAddress;
+
 public class GHTServerHandler extends SimpleChannelInboundHandler<MessageData.Message> {
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        super.channelActive(ctx);
+        System.out.println("--Connection From:" + ctx.channel().toString());
+    }
+
+    @Override
+    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+        super.channelRegistered(ctx);
+        System.out.println("--Registered From:" + ctx.channel().toString());
+    }
+
+    @Override
+    public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
+        super.channelUnregistered(ctx);
+        System.out.println("--Unregistered To:" + ctx.channel().toString());
+    }
 
     protected void messageReceived(ChannelHandlerContext channelHandlerContext, MessageData.Message message) {
         System.out.println("--Message From:" + channelHandlerContext.channel().toString());
