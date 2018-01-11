@@ -4,6 +4,7 @@ import cn.ght.protocol.MessageData;
 import cn.ght.server.bean.DeviceConnection;
 import cn.ght.server.bean.LocationInfo;
 import cn.ght.server.bean.ModuleConnection;
+import cn.ght.server.manager.MobileManager;
 import cn.ght.server.manager.ModuleManager;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
@@ -17,18 +18,6 @@ public class GHTServerHandler extends SimpleChannelInboundHandler<MessageData.Me
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
         System.out.println("--Connection From:" + ctx.channel().toString());
-    }
-
-    @Override
-    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
-        super.channelRegistered(ctx);
-        System.out.println("--Registered From:" + ctx.channel().toString());
-    }
-
-    @Override
-    public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
-        super.channelUnregistered(ctx);
-        System.out.println("--Unregistered To:" + ctx.channel().toString());
     }
 
     protected void messageReceived(ChannelHandlerContext channelHandlerContext, MessageData.Message message) {
@@ -53,6 +42,14 @@ public class GHTServerHandler extends SimpleChannelInboundHandler<MessageData.Me
                             break;
                         case DeviceAndroid:
                         case DeviceIOS:
+                            if (MobileManager.getInstance().contains(message.getLoginRequest().getDeviceName())) {
+                                sendLoginResponse(channelHandlerContext, false, "Duplicated Account, You must input another account");
+                                channelHandlerContext.disconnect();
+                                channelHandlerContext.close();
+                            } else {
+                                sendLoginResponse(channelHandlerContext, true, "");
+                                MobileManager.getInstance().add(message.getLoginRequest().getDeviceName(), channelHandlerContext);
+                            }
                             break;
                     }
                 }
