@@ -8,5 +8,6 @@ public class MobileConnection extends DeviceConnection {
     }
 
     public MobileConnection(String deviceName, ChannelHandlerContext channelHandlerContext) {
+        super(deviceName, channelHandlerContext);
     }
 }

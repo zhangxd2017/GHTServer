@@ -1,5 +1,9 @@
 package cn.ght.server.manager;
 
+import cn.ght.server.bean.DeviceConnection;
+import cn.ght.server.bean.PCConnection;
+import io.netty.channel.ChannelHandlerContext;
+
 public class PCManager {
     private static PCManager instance = null;
     private static Object locker = new Object();
@@ -16,5 +20,12 @@ public class PCManager {
     }
 
     private PCManager() {
+    }
+
+    public PCConnection getByContext(ChannelHandlerContext channelHandlerContext) {
+        return null;
+    }
+
+    public void remove(PCConnection deviceConnection) {
     }
 }

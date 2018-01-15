@@ -6,6 +6,8 @@ public class LocationInfo {
 
     private double latitude;
 
+    private String reportLBSData;
+
     public LocationInfo() {
     }
 
@@ -28,5 +30,13 @@ public class LocationInfo {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public String getReportLBSData() {
+        return reportLBSData;
+    }
+
+    public void setReportLBSData(String reportLBSData) {
+        this.reportLBSData = reportLBSData;
     }
 }

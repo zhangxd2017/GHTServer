@@ -1,14 +1,12 @@
 package cn.ght.server;
 
-import cn.ght.protocol.MessageData;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.protobuf.ProtobufDecoder;
-import io.netty.handler.codec.protobuf.ProtobufEncoder;
-import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 
 public class GHTServer {
 
@@ -36,12 +34,10 @@ public class GHTServer {
             bootstrap.childOption(ChannelOption.SO_KEEPALIVE, true);
             bootstrap.childHandler(new ChannelInitializer<SocketChannel>() {
                 protected void initChannel(SocketChannel socketChannel) throws Exception {
-                    ChannelPipeline p = socketChannel.pipeline();
-                    p.addLast(new ProtobufVarint32FrameDecoder());
-                    p.addLast(new ProtobufDecoder(MessageData.Message.getDefaultInstance()));
-                    p.addLast(new ProtobufEncoder());
-//                    p.addLast(new JsonHandler());
-                    p.addLast(new GHTServerHandler());
+                    ChannelPipeline channelPipeline = socketChannel.pipeline();
+                    channelPipeline.addLast(new StringDecoder());
+                    channelPipeline.addLast(new StringEncoder());
+                    channelPipeline.addLast(new GHTMHandler());
                 }
             });
             ChannelFuture channelFuture = bootstrap.bind(port).sync();
@@ -59,10 +55,12 @@ public class GHTServer {
 
     public static void main(String[] args) throws InterruptedException {
         int serverPort;
-        if (args.length > 1) {
+        if (args.length > 0) {
+            System.out.println("port:" + args[0]);
             serverPort = Integer.parseInt(args[0]);
         } else {
-            serverPort = 9999;
+            System.out.println("no port defined, user default 9001");
+            serverPort = 9001;
         }
         GHTServer server = new GHTServer(serverPort);
         server.start();

@@ -1,5 +1,6 @@
 package cn.ght.server.manager;
 
+import cn.ght.protocol.bean.ModuleInfo;
 import cn.ght.server.bean.ModuleConnection;
 import io.netty.channel.ChannelHandlerContext;
 
@@ -93,5 +94,19 @@ public class ModuleManager {
         synchronized (locker) {
             modules.remove(moduleConnection);
         }
+    }
+
+    public List<ModuleInfo> getAllModules() {
+        List<ModuleInfo> lists = new ArrayList<>();
+        synchronized (locker) {
+            for (ModuleConnection module : modules) {
+                ModuleInfo info = new ModuleInfo();
+                info.setName(module.getDeviceName());
+                info.setLongitude(module.getLocationInfo().getLongitude());
+                info.setLatitude(module.getLocationInfo().getLatitude());
+                lists.add(info);
+            }
+        }
+        return lists;
     }
 }

@@ -48,4 +48,24 @@ public class MobileManager {
     public void add(String deviceName, ChannelHandlerContext channelHandlerContext) {
         add(new MobileConnection(deviceName, channelHandlerContext));
     }
+
+    public MobileConnection getByContext(ChannelHandlerContext channelHandlerContext) {
+        MobileConnection mobileConnection = null;
+        synchronized (locker) {
+            for (MobileConnection connection : mobiles) {
+                if (connection.getConnectContext().equals(channelHandlerContext)) {
+                    mobileConnection = connection;
+                    break;
+                }
+            }
+        }
+        return mobileConnection;
+    }
+
+
+    public void remove(MobileConnection mobileConnection) {
+        synchronized (locker) {
+            mobiles.remove(mobileConnection);
+        }
+    }
 }

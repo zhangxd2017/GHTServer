@@ -76,101 +76,109 @@ public final class MessageData {
      *PC与服务器协议
      * </pre>
      *
-     * <code>FileListQuery = 30001;</code>
+     * <code>File_List_Query = 30001;</code>
      */
-    FileListQuery(30001),
+    File_List_Query(30001),
     /**
      * <pre>
      *PC向服务器上报文件系统
      * </pre>
      *
-     * <code>FileList = 30002;</code>
+     * <code>File_List = 30002;</code>
      */
-    FileList(30002),
+    File_List(30002),
     /**
      * <pre>
      *服务器向PC发送删除文件(夹)指令
      * </pre>
      *
-     * <code>DeleteFileQuery = 30003;</code>
+     * <code>Delete_File_Query = 30003;</code>
      */
-    DeleteFileQuery(30003),
+    Delete_File_Query(30003),
     /**
      * <pre>
      *PC向服务器上报删除文件(夹)指令结果
      * </pre>
      *
-     * <code>DeleteFile = 30004;</code>
+     * <code>Delete_File = 30004;</code>
      */
-    DeleteFile(30004),
+    Delete_File(30004),
     /**
      * <pre>
      *服务器向PC或者模块发送关机指令
      * </pre>
      *
-     * <code>PowerOffQuery = 50001;</code>
+     * <code>Power_Off_Query = 50001;</code>
      */
-    PowerOffQuery(50001),
+    Power_Off_Query(50001),
     /**
      * <pre>
      *模块或者PC向服务器回复关机指令
      * </pre>
      *
-     * <code>PowerOff = 50002;</code>
+     * <code>Power_Off = 50002;</code>
      */
-    PowerOff(50002),
+    Power_Off(50002),
     /**
      * <pre>
      *移动端与服务器协议
      * </pre>
      *
-     * <code>GetPCListRequest = 40001;</code>
+     * <code>Get_PC_List_Request = 40001;</code>
      */
-    GetPCListRequest(40001),
+    Get_PC_List_Request(40001),
     /**
-     * <code>GetPCListResponse = 40002;</code>
+     * <code>Get_PC_List_Response = 40002;</code>
      */
-    GetPCListResponse(40002),
+    Get_PC_List_Response(40002),
     /**
-     * <code>GetModuleListRequest = 40003;</code>
+     * <code>Get_Module_List_Request = 40003;</code>
      */
-    GetModuleListRequest(40003),
+    Get_Module_List_Request(40003),
     /**
-     * <code>GetModuleListResponse = 40004;</code>
+     * <code>Get_Module_List_Response = 40004;</code>
      */
-    GetModuleListResponse(40004),
+    Get_Module_List_Response(40004),
     /**
-     * <code>SetPowerOnRequest = 40005;</code>
+     * <code>Set_Power_On_Request = 40005;</code>
      */
-    SetPowerOnRequest(40005),
+    Set_Power_On_Request(40005),
     /**
-     * <code>SetPowerOnResponse = 40006;</code>
+     * <code>Set_Power_On_Response = 40006;</code>
      */
-    SetPowerOnResponse(40006),
+    Set_Power_On_Response(40006),
     /**
-     * <code>GetFileListRequest = 40007;</code>
+     * <code>Get_File_List_Request = 40007;</code>
      */
-    GetFileListRequest(40007),
+    Get_File_List_Request(40007),
     /**
-     * <code>GetFileListResponse = 40008;</code>
+     * <code>Get_File_List_Response = 40008;</code>
      */
-    GetFileListResponse(40008),
+    Get_File_List_Response(40008),
     /**
-     * <code>DeleteFileRequest = 40009;</code>
+     * <code>Delete_File_Request = 40009;</code>
      */
-    DeleteFileRequest(40009),
+    Delete_File_Request(40009),
     /**
-     * <code>DeleteFileResponse = 40010;</code>
+     * <code>Delete_File_Response = 40010;</code>
      */
-    DeleteFileResponse(40010),
+    Delete_File_Response(40010),
     /**
-     * <code>GetLocationRequest = 40011;</code>
+     * <code>Get_Location_Request = 40011;</code>
      */
-    GetLocationRequest(40011),
+    Get_Location_Request(40011),
     /**
-     * <code>GetLocationResponse = 40012;</code>
+     * <code>Get_Location_Response = 40012;</code>
      */
-    GetLocationResponse(40012),
+    Get_Location_Response(40012),
+    /**
+     * <code>Set_Power_Off_Request = 40013;</code>
+     */
+    Set_Power_Off_Request(40013),
+    /**
+     * <code>Set_Power_Off_Response = 40014;</code>
+     */
+    Set_Power_Off_Response(40014),
     ;
 
     /**
@@ -226,101 +234,109 @@ public final class MessageData {
      *PC与服务器协议
      * </pre>
      *
-     * <code>FileListQuery = 30001;</code>
+     * <code>File_List_Query = 30001;</code>
      */
-    public static final int FileListQuery_VALUE = 30001;
+    public static final int File_List_Query_VALUE = 30001;
     /**
      * <pre>
      *PC向服务器上报文件系统
      * </pre>
      *
-     * <code>FileList = 30002;</code>
+     * <code>File_List = 30002;</code>
      */
-    public static final int FileList_VALUE = 30002;
+    public static final int File_List_VALUE = 30002;
     /**
      * <pre>
      *服务器向PC发送删除文件(夹)指令
      * </pre>
      *
-     * <code>DeleteFileQuery = 30003;</code>
+     * <code>Delete_File_Query = 30003;</code>
      */
-    public static final int DeleteFileQuery_VALUE = 30003;
+    public static final int Delete_File_Query_VALUE = 30003;
     /**
      * <pre>
      *PC向服务器上报删除文件(夹)指令结果
      * </pre>
      *
-     * <code>DeleteFile = 30004;</code>
+     * <code>Delete_File = 30004;</code>
      */
-    public static final int DeleteFile_VALUE = 30004;
+    public static final int Delete_File_VALUE = 30004;
     /**
      * <pre>
      *服务器向PC或者模块发送关机指令
      * </pre>
      *
-     * <code>PowerOffQuery = 50001;</code>
+     * <code>Power_Off_Query = 50001;</code>
      */
-    public static final int PowerOffQuery_VALUE = 50001;
+    public static final int Power_Off_Query_VALUE = 50001;
     /**
      * <pre>
      *模块或者PC向服务器回复关机指令
      * </pre>
      *
-     * <code>PowerOff = 50002;</code>
+     * <code>Power_Off = 50002;</code>
      */
-    public static final int PowerOff_VALUE = 50002;
+    public static final int Power_Off_VALUE = 50002;
     /**
      * <pre>
      *移动端与服务器协议
      * </pre>
      *
-     * <code>GetPCListRequest = 40001;</code>
+     * <code>Get_PC_List_Request = 40001;</code>
      */
-    public static final int GetPCListRequest_VALUE = 40001;
+    public static final int Get_PC_List_Request_VALUE = 40001;
     /**
-     * <code>GetPCListResponse = 40002;</code>
+     * <code>Get_PC_List_Response = 40002;</code>
      */
-    public static final int GetPCListResponse_VALUE = 40002;
+    public static final int Get_PC_List_Response_VALUE = 40002;
     /**
-     * <code>GetModuleListRequest = 40003;</code>
+     * <code>Get_Module_List_Request = 40003;</code>
      */
-    public static final int GetModuleListRequest_VALUE = 40003;
+    public static final int Get_Module_List_Request_VALUE = 40003;
     /**
-     * <code>GetModuleListResponse = 40004;</code>
+     * <code>Get_Module_List_Response = 40004;</code>
      */
-    public static final int GetModuleListResponse_VALUE = 40004;
+    public static final int Get_Module_List_Response_VALUE = 40004;
     /**
-     * <code>SetPowerOnRequest = 40005;</code>
+     * <code>Set_Power_On_Request = 40005;</code>
      */
-    public static final int SetPowerOnRequest_VALUE = 40005;
+    public static final int Set_Power_On_Request_VALUE = 40005;
     /**
-     * <code>SetPowerOnResponse = 40006;</code>
+     * <code>Set_Power_On_Response = 40006;</code>
      */
-    public static final int SetPowerOnResponse_VALUE = 40006;
+    public static final int Set_Power_On_Response_VALUE = 40006;
     /**
-     * <code>GetFileListRequest = 40007;</code>
+     * <code>Get_File_List_Request = 40007;</code>
      */
-    public static final int GetFileListRequest_VALUE = 40007;
+    public static final int Get_File_List_Request_VALUE = 40007;
     /**
-     * <code>GetFileListResponse = 40008;</code>
+     * <code>Get_File_List_Response = 40008;</code>
      */
-    public static final int GetFileListResponse_VALUE = 40008;
+    public static final int Get_File_List_Response_VALUE = 40008;
     /**
-     * <code>DeleteFileRequest = 40009;</code>
+     * <code>Delete_File_Request = 40009;</code>
      */
-    public static final int DeleteFileRequest_VALUE = 40009;
+    public static final int Delete_File_Request_VALUE = 40009;
     /**
-     * <code>DeleteFileResponse = 40010;</code>
+     * <code>Delete_File_Response = 40010;</code>
      */
-    public static final int DeleteFileResponse_VALUE = 40010;
+    public static final int Delete_File_Response_VALUE = 40010;
     /**
-     * <code>GetLocationRequest = 40011;</code>
+     * <code>Get_Location_Request = 40011;</code>
      */
-    public static final int GetLocationRequest_VALUE = 40011;
+    public static final int Get_Location_Request_VALUE = 40011;
     /**
-     * <code>GetLocationResponse = 40012;</code>
+     * <code>Get_Location_Response = 40012;</code>
      */
-    public static final int GetLocationResponse_VALUE = 40012;
+    public static final int Get_Location_Response_VALUE = 40012;
+    /**
+     * <code>Set_Power_Off_Request = 40013;</code>
+     */
+    public static final int Set_Power_Off_Request_VALUE = 40013;
+    /**
+     * <code>Set_Power_Off_Response = 40014;</code>
+     */
+    public static final int Set_Power_Off_Response_VALUE = 40014;
 
 
     public final int getNumber() {
@@ -343,24 +359,26 @@ public final class MessageData {
         case 20002: return Power_On_PC;
         case 20003: return Report_GPS_Query;
         case 20004: return Report_GPS;
-        case 30001: return FileListQuery;
-        case 30002: return FileList;
-        case 30003: return DeleteFileQuery;
-        case 30004: return DeleteFile;
-        case 50001: return PowerOffQuery;
-        case 50002: return PowerOff;
-        case 40001: return GetPCListRequest;
-        case 40002: return GetPCListResponse;
-        case 40003: return GetModuleListRequest;
-        case 40004: return GetModuleListResponse;
-        case 40005: return SetPowerOnRequest;
-        case 40006: return SetPowerOnResponse;
-        case 40007: return GetFileListRequest;
-        case 40008: return GetFileListResponse;
-        case 40009: return DeleteFileRequest;
-        case 40010: return DeleteFileResponse;
-        case 40011: return GetLocationRequest;
-        case 40012: return GetLocationResponse;
+        case 30001: return File_List_Query;
+        case 30002: return File_List;
+        case 30003: return Delete_File_Query;
+        case 30004: return Delete_File;
+        case 50001: return Power_Off_Query;
+        case 50002: return Power_Off;
+        case 40001: return Get_PC_List_Request;
+        case 40002: return Get_PC_List_Response;
+        case 40003: return Get_Module_List_Request;
+        case 40004: return Get_Module_List_Response;
+        case 40005: return Set_Power_On_Request;
+        case 40006: return Set_Power_On_Response;
+        case 40007: return Get_File_List_Request;
+        case 40008: return Get_File_List_Response;
+        case 40009: return Delete_File_Request;
+        case 40010: return Delete_File_Response;
+        case 40011: return Get_Location_Request;
+        case 40012: return Get_Location_Response;
+        case 40013: return Set_Power_Off_Request;
+        case 40014: return Set_Power_Off_Response;
         default: return null;
       }
     }
@@ -4043,6 +4061,11073 @@ public final class MessageData {
 
   }
 
+  public interface GetPCListRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetPCListRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetPCListRequest}
+   */
+  public  static final class GetPCListRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetPCListRequest)
+      GetPCListRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetPCListRequest.newBuilder() to construct.
+    private GetPCListRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetPCListRequest() {
+      deviceName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetPCListRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetPCListRequest.class, cn.ght.protocol.MessageData.GetPCListRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetPCListRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetPCListRequest other = (cn.ght.protocol.MessageData.GetPCListRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetPCListRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetPCListRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetPCListRequest)
+        cn.ght.protocol.MessageData.GetPCListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetPCListRequest.class, cn.ght.protocol.MessageData.GetPCListRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetPCListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListRequest build() {
+        cn.ght.protocol.MessageData.GetPCListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListRequest buildPartial() {
+        cn.ght.protocol.MessageData.GetPCListRequest result = new cn.ght.protocol.MessageData.GetPCListRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetPCListRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetPCListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetPCListRequest other) {
+        if (other == cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetPCListRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetPCListRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetPCListRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetPCListRequest)
+    private static final cn.ght.protocol.MessageData.GetPCListRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetPCListRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.GetPCListRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetPCListRequest>
+        PARSER = new com.google.protobuf.AbstractParser<GetPCListRequest>() {
+      public GetPCListRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetPCListRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetPCListRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetPCListRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetPCListRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetPCListResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetPCListResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getPcNamesList();
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    int getPcNamesCount();
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    java.lang.String getPcNames(int index);
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNamesBytes(int index);
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetPCListResponse}
+   */
+  public  static final class GetPCListResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetPCListResponse)
+      GetPCListResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetPCListResponse.newBuilder() to construct.
+    private GetPCListResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetPCListResponse() {
+      pcNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetPCListResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                pcNames_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              pcNames_.add(bs);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          pcNames_ = pcNames_.getUnmodifiableView();
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetPCListResponse.class, cn.ght.protocol.MessageData.GetPCListResponse.Builder.class);
+    }
+
+    public static final int PC_NAMES_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList pcNames_;
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getPcNamesList() {
+      return pcNames_;
+    }
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    public int getPcNamesCount() {
+      return pcNames_.size();
+    }
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    public java.lang.String getPcNames(int index) {
+      return pcNames_.get(index);
+    }
+    /**
+     * <code>repeated string pc_names = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNamesBytes(int index) {
+      return pcNames_.getByteString(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < pcNames_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, pcNames_.getRaw(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < pcNames_.size(); i++) {
+          dataSize += computeStringSizeNoTag(pcNames_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getPcNamesList().size();
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetPCListResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetPCListResponse other = (cn.ght.protocol.MessageData.GetPCListResponse) obj;
+
+      boolean result = true;
+      result = result && getPcNamesList()
+          .equals(other.getPcNamesList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getPcNamesCount() > 0) {
+        hash = (37 * hash) + PC_NAMES_FIELD_NUMBER;
+        hash = (53 * hash) + getPcNamesList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetPCListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetPCListResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetPCListResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetPCListResponse)
+        cn.ght.protocol.MessageData.GetPCListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetPCListResponse.class, cn.ght.protocol.MessageData.GetPCListResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetPCListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        pcNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetPCListResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListResponse build() {
+        cn.ght.protocol.MessageData.GetPCListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetPCListResponse buildPartial() {
+        cn.ght.protocol.MessageData.GetPCListResponse result = new cn.ght.protocol.MessageData.GetPCListResponse(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          pcNames_ = pcNames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.pcNames_ = pcNames_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetPCListResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetPCListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetPCListResponse other) {
+        if (other == cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance()) return this;
+        if (!other.pcNames_.isEmpty()) {
+          if (pcNames_.isEmpty()) {
+            pcNames_ = other.pcNames_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensurePcNamesIsMutable();
+            pcNames_.addAll(other.pcNames_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetPCListResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetPCListResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList pcNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensurePcNamesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          pcNames_ = new com.google.protobuf.LazyStringArrayList(pcNames_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getPcNamesList() {
+        return pcNames_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public int getPcNamesCount() {
+        return pcNames_.size();
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public java.lang.String getPcNames(int index) {
+        return pcNames_.get(index);
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNamesBytes(int index) {
+        return pcNames_.getByteString(index);
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public Builder setPcNames(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensurePcNamesIsMutable();
+        pcNames_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public Builder addPcNames(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensurePcNamesIsMutable();
+        pcNames_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public Builder addAllPcNames(
+          java.lang.Iterable<java.lang.String> values) {
+        ensurePcNamesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, pcNames_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public Builder clearPcNames() {
+        pcNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string pc_names = 1;</code>
+       */
+      public Builder addPcNamesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensurePcNamesIsMutable();
+        pcNames_.add(value);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetPCListResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetPCListResponse)
+    private static final cn.ght.protocol.MessageData.GetPCListResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetPCListResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.GetPCListResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetPCListResponse>
+        PARSER = new com.google.protobuf.AbstractParser<GetPCListResponse>() {
+      public GetPCListResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetPCListResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetPCListResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetPCListResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetPCListResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetModuleListRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetModuleListRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetModuleListRequest}
+   */
+  public  static final class GetModuleListRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetModuleListRequest)
+      GetModuleListRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetModuleListRequest.newBuilder() to construct.
+    private GetModuleListRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetModuleListRequest() {
+      deviceName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetModuleListRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetModuleListRequest.class, cn.ght.protocol.MessageData.GetModuleListRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetModuleListRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetModuleListRequest other = (cn.ght.protocol.MessageData.GetModuleListRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetModuleListRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetModuleListRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetModuleListRequest)
+        cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetModuleListRequest.class, cn.ght.protocol.MessageData.GetModuleListRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetModuleListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListRequest build() {
+        cn.ght.protocol.MessageData.GetModuleListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListRequest buildPartial() {
+        cn.ght.protocol.MessageData.GetModuleListRequest result = new cn.ght.protocol.MessageData.GetModuleListRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetModuleListRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetModuleListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetModuleListRequest other) {
+        if (other == cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetModuleListRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetModuleListRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetModuleListRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetModuleListRequest)
+    private static final cn.ght.protocol.MessageData.GetModuleListRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetModuleListRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.GetModuleListRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetModuleListRequest>
+        PARSER = new com.google.protobuf.AbstractParser<GetModuleListRequest>() {
+      public GetModuleListRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetModuleListRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetModuleListRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetModuleListRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetModuleListRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetModuleListResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetModuleListResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getModuleNamesList();
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    int getModuleNamesCount();
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    java.lang.String getModuleNames(int index);
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNamesBytes(int index);
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetModuleListResponse}
+   */
+  public  static final class GetModuleListResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetModuleListResponse)
+      GetModuleListResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetModuleListResponse.newBuilder() to construct.
+    private GetModuleListResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetModuleListResponse() {
+      moduleNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetModuleListResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                moduleNames_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              moduleNames_.add(bs);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          moduleNames_ = moduleNames_.getUnmodifiableView();
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetModuleListResponse.class, cn.ght.protocol.MessageData.GetModuleListResponse.Builder.class);
+    }
+
+    public static final int MODULE_NAMES_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList moduleNames_;
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getModuleNamesList() {
+      return moduleNames_;
+    }
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    public int getModuleNamesCount() {
+      return moduleNames_.size();
+    }
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    public java.lang.String getModuleNames(int index) {
+      return moduleNames_.get(index);
+    }
+    /**
+     * <code>repeated string module_names = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNamesBytes(int index) {
+      return moduleNames_.getByteString(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < moduleNames_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, moduleNames_.getRaw(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < moduleNames_.size(); i++) {
+          dataSize += computeStringSizeNoTag(moduleNames_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getModuleNamesList().size();
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetModuleListResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetModuleListResponse other = (cn.ght.protocol.MessageData.GetModuleListResponse) obj;
+
+      boolean result = true;
+      result = result && getModuleNamesList()
+          .equals(other.getModuleNamesList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getModuleNamesCount() > 0) {
+        hash = (37 * hash) + MODULE_NAMES_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleNamesList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetModuleListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetModuleListResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetModuleListResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetModuleListResponse)
+        cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetModuleListResponse.class, cn.ght.protocol.MessageData.GetModuleListResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetModuleListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        moduleNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetModuleListResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListResponse build() {
+        cn.ght.protocol.MessageData.GetModuleListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetModuleListResponse buildPartial() {
+        cn.ght.protocol.MessageData.GetModuleListResponse result = new cn.ght.protocol.MessageData.GetModuleListResponse(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          moduleNames_ = moduleNames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.moduleNames_ = moduleNames_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetModuleListResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetModuleListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetModuleListResponse other) {
+        if (other == cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance()) return this;
+        if (!other.moduleNames_.isEmpty()) {
+          if (moduleNames_.isEmpty()) {
+            moduleNames_ = other.moduleNames_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureModuleNamesIsMutable();
+            moduleNames_.addAll(other.moduleNames_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetModuleListResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetModuleListResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList moduleNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureModuleNamesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          moduleNames_ = new com.google.protobuf.LazyStringArrayList(moduleNames_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getModuleNamesList() {
+        return moduleNames_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public int getModuleNamesCount() {
+        return moduleNames_.size();
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public java.lang.String getModuleNames(int index) {
+        return moduleNames_.get(index);
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNamesBytes(int index) {
+        return moduleNames_.getByteString(index);
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public Builder setModuleNames(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureModuleNamesIsMutable();
+        moduleNames_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public Builder addModuleNames(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureModuleNamesIsMutable();
+        moduleNames_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public Builder addAllModuleNames(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureModuleNamesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, moduleNames_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public Builder clearModuleNames() {
+        moduleNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string module_names = 1;</code>
+       */
+      public Builder addModuleNamesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureModuleNamesIsMutable();
+        moduleNames_.add(value);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetModuleListResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetModuleListResponse)
+    private static final cn.ght.protocol.MessageData.GetModuleListResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetModuleListResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.GetModuleListResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetModuleListResponse>
+        PARSER = new com.google.protobuf.AbstractParser<GetModuleListResponse>() {
+      public GetModuleListResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetModuleListResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetModuleListResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetModuleListResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetModuleListResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetPowerOnRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.SetPowerOnRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.SetPowerOnRequest}
+   */
+  public  static final class SetPowerOnRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.SetPowerOnRequest)
+      SetPowerOnRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetPowerOnRequest.newBuilder() to construct.
+    private SetPowerOnRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetPowerOnRequest() {
+      deviceName_ = "";
+      moduleName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetPowerOnRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              moduleName_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.SetPowerOnRequest.class, cn.ght.protocol.MessageData.SetPowerOnRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MODULE_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasModuleName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, moduleName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, moduleName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.SetPowerOnRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.SetPowerOnRequest other = (cn.ght.protocol.MessageData.SetPowerOnRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.SetPowerOnRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.SetPowerOnRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.SetPowerOnRequest)
+        cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.SetPowerOnRequest.class, cn.ght.protocol.MessageData.SetPowerOnRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.SetPowerOnRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnRequest build() {
+        cn.ght.protocol.MessageData.SetPowerOnRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnRequest buildPartial() {
+        cn.ght.protocol.MessageData.SetPowerOnRequest result = new cn.ght.protocol.MessageData.SetPowerOnRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.moduleName_ = moduleName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.SetPowerOnRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.SetPowerOnRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.SetPowerOnRequest other) {
+        if (other == cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000002;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        if (!hasModuleName()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.SetPowerOnRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.SetPowerOnRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.SetPowerOnRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.SetPowerOnRequest)
+    private static final cn.ght.protocol.MessageData.SetPowerOnRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.SetPowerOnRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOnRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<SetPowerOnRequest>
+        PARSER = new com.google.protobuf.AbstractParser<SetPowerOnRequest>() {
+      public SetPowerOnRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetPowerOnRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetPowerOnRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SetPowerOnRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.SetPowerOnRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetPowerOnResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.SetPowerOnResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+
+    /**
+     * <code>required bool power_on_success = 2;</code>
+     */
+    boolean hasPowerOnSuccess();
+    /**
+     * <code>required bool power_on_success = 2;</code>
+     */
+    boolean getPowerOnSuccess();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.SetPowerOnResponse}
+   */
+  public  static final class SetPowerOnResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.SetPowerOnResponse)
+      SetPowerOnResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetPowerOnResponse.newBuilder() to construct.
+    private SetPowerOnResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetPowerOnResponse() {
+      moduleName_ = "";
+      powerOnSuccess_ = false;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetPowerOnResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              moduleName_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              powerOnSuccess_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.SetPowerOnResponse.class, cn.ght.protocol.MessageData.SetPowerOnResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int MODULE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int POWER_ON_SUCCESS_FIELD_NUMBER = 2;
+    private boolean powerOnSuccess_;
+    /**
+     * <code>required bool power_on_success = 2;</code>
+     */
+    public boolean hasPowerOnSuccess() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required bool power_on_success = 2;</code>
+     */
+    public boolean getPowerOnSuccess() {
+      return powerOnSuccess_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasModuleName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPowerOnSuccess()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, powerOnSuccess_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, powerOnSuccess_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.SetPowerOnResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.SetPowerOnResponse other = (cn.ght.protocol.MessageData.SetPowerOnResponse) obj;
+
+      boolean result = true;
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && (hasPowerOnSuccess() == other.hasPowerOnSuccess());
+      if (hasPowerOnSuccess()) {
+        result = result && (getPowerOnSuccess()
+            == other.getPowerOnSuccess());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      if (hasPowerOnSuccess()) {
+        hash = (37 * hash) + POWER_ON_SUCCESS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPowerOnSuccess());
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.SetPowerOnResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.SetPowerOnResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.SetPowerOnResponse)
+        cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.SetPowerOnResponse.class, cn.ght.protocol.MessageData.SetPowerOnResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.SetPowerOnResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        powerOnSuccess_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnResponse build() {
+        cn.ght.protocol.MessageData.SetPowerOnResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOnResponse buildPartial() {
+        cn.ght.protocol.MessageData.SetPowerOnResponse result = new cn.ght.protocol.MessageData.SetPowerOnResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.moduleName_ = moduleName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.powerOnSuccess_ = powerOnSuccess_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.SetPowerOnResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.SetPowerOnResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.SetPowerOnResponse other) {
+        if (other == cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance()) return this;
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000001;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        if (other.hasPowerOnSuccess()) {
+          setPowerOnSuccess(other.getPowerOnSuccess());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasModuleName()) {
+          return false;
+        }
+        if (!hasPowerOnSuccess()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.SetPowerOnResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.SetPowerOnResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean powerOnSuccess_ ;
+      /**
+       * <code>required bool power_on_success = 2;</code>
+       */
+      public boolean hasPowerOnSuccess() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required bool power_on_success = 2;</code>
+       */
+      public boolean getPowerOnSuccess() {
+        return powerOnSuccess_;
+      }
+      /**
+       * <code>required bool power_on_success = 2;</code>
+       */
+      public Builder setPowerOnSuccess(boolean value) {
+        bitField0_ |= 0x00000002;
+        powerOnSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bool power_on_success = 2;</code>
+       */
+      public Builder clearPowerOnSuccess() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        powerOnSuccess_ = false;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.SetPowerOnResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.SetPowerOnResponse)
+    private static final cn.ght.protocol.MessageData.SetPowerOnResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.SetPowerOnResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOnResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<SetPowerOnResponse>
+        PARSER = new com.google.protobuf.AbstractParser<SetPowerOnResponse>() {
+      public SetPowerOnResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetPowerOnResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetPowerOnResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SetPowerOnResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.SetPowerOnResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetLocationRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetLocationRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetLocationRequest}
+   */
+  public  static final class GetLocationRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetLocationRequest)
+      GetLocationRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetLocationRequest.newBuilder() to construct.
+    private GetLocationRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetLocationRequest() {
+      deviceName_ = "";
+      moduleName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetLocationRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              moduleName_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetLocationRequest.class, cn.ght.protocol.MessageData.GetLocationRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MODULE_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string module_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasModuleName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, moduleName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, moduleName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetLocationRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetLocationRequest other = (cn.ght.protocol.MessageData.GetLocationRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetLocationRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetLocationRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetLocationRequest)
+        cn.ght.protocol.MessageData.GetLocationRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetLocationRequest.class, cn.ght.protocol.MessageData.GetLocationRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetLocationRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationRequest build() {
+        cn.ght.protocol.MessageData.GetLocationRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationRequest buildPartial() {
+        cn.ght.protocol.MessageData.GetLocationRequest result = new cn.ght.protocol.MessageData.GetLocationRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.moduleName_ = moduleName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetLocationRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetLocationRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetLocationRequest other) {
+        if (other == cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000002;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        if (!hasModuleName()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetLocationRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetLocationRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 2;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetLocationRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetLocationRequest)
+    private static final cn.ght.protocol.MessageData.GetLocationRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetLocationRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.GetLocationRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetLocationRequest>
+        PARSER = new com.google.protobuf.AbstractParser<GetLocationRequest>() {
+      public GetLocationRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetLocationRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetLocationRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetLocationRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetLocationRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetLocationResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetLocationResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+
+    /**
+     * <code>required double longitude = 2;</code>
+     */
+    boolean hasLongitude();
+    /**
+     * <code>required double longitude = 2;</code>
+     */
+    double getLongitude();
+
+    /**
+     * <code>required double latitude = 3;</code>
+     */
+    boolean hasLatitude();
+    /**
+     * <code>required double latitude = 3;</code>
+     */
+    double getLatitude();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetLocationResponse}
+   */
+  public  static final class GetLocationResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetLocationResponse)
+      GetLocationResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetLocationResponse.newBuilder() to construct.
+    private GetLocationResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetLocationResponse() {
+      moduleName_ = "";
+      longitude_ = 0D;
+      latitude_ = 0D;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetLocationResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              moduleName_ = bs;
+              break;
+            }
+            case 17: {
+              bitField0_ |= 0x00000002;
+              longitude_ = input.readDouble();
+              break;
+            }
+            case 25: {
+              bitField0_ |= 0x00000004;
+              latitude_ = input.readDouble();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetLocationResponse.class, cn.ght.protocol.MessageData.GetLocationResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int MODULE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string module_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LONGITUDE_FIELD_NUMBER = 2;
+    private double longitude_;
+    /**
+     * <code>required double longitude = 2;</code>
+     */
+    public boolean hasLongitude() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required double longitude = 2;</code>
+     */
+    public double getLongitude() {
+      return longitude_;
+    }
+
+    public static final int LATITUDE_FIELD_NUMBER = 3;
+    private double latitude_;
+    /**
+     * <code>required double latitude = 3;</code>
+     */
+    public boolean hasLatitude() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required double latitude = 3;</code>
+     */
+    public double getLatitude() {
+      return latitude_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasModuleName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasLongitude()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasLatitude()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeDouble(2, longitude_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeDouble(3, latitude_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(2, longitude_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeDoubleSize(3, latitude_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetLocationResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetLocationResponse other = (cn.ght.protocol.MessageData.GetLocationResponse) obj;
+
+      boolean result = true;
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && (hasLongitude() == other.hasLongitude());
+      if (hasLongitude()) {
+        result = result && (
+            java.lang.Double.doubleToLongBits(getLongitude())
+            == java.lang.Double.doubleToLongBits(
+                other.getLongitude()));
+      }
+      result = result && (hasLatitude() == other.hasLatitude());
+      if (hasLatitude()) {
+        result = result && (
+            java.lang.Double.doubleToLongBits(getLatitude())
+            == java.lang.Double.doubleToLongBits(
+                other.getLatitude()));
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      if (hasLongitude()) {
+        hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            java.lang.Double.doubleToLongBits(getLongitude()));
+      }
+      if (hasLatitude()) {
+        hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            java.lang.Double.doubleToLongBits(getLatitude()));
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetLocationResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetLocationResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetLocationResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetLocationResponse)
+        cn.ght.protocol.MessageData.GetLocationResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetLocationResponse.class, cn.ght.protocol.MessageData.GetLocationResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetLocationResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        longitude_ = 0D;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        latitude_ = 0D;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetLocationResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationResponse build() {
+        cn.ght.protocol.MessageData.GetLocationResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetLocationResponse buildPartial() {
+        cn.ght.protocol.MessageData.GetLocationResponse result = new cn.ght.protocol.MessageData.GetLocationResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.moduleName_ = moduleName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.longitude_ = longitude_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.latitude_ = latitude_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetLocationResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetLocationResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetLocationResponse other) {
+        if (other == cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance()) return this;
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000001;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        if (other.hasLongitude()) {
+          setLongitude(other.getLongitude());
+        }
+        if (other.hasLatitude()) {
+          setLatitude(other.getLatitude());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasModuleName()) {
+          return false;
+        }
+        if (!hasLongitude()) {
+          return false;
+        }
+        if (!hasLatitude()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetLocationResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetLocationResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string module_name = 1;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private double longitude_ ;
+      /**
+       * <code>required double longitude = 2;</code>
+       */
+      public boolean hasLongitude() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required double longitude = 2;</code>
+       */
+      public double getLongitude() {
+        return longitude_;
+      }
+      /**
+       * <code>required double longitude = 2;</code>
+       */
+      public Builder setLongitude(double value) {
+        bitField0_ |= 0x00000002;
+        longitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required double longitude = 2;</code>
+       */
+      public Builder clearLongitude() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        longitude_ = 0D;
+        onChanged();
+        return this;
+      }
+
+      private double latitude_ ;
+      /**
+       * <code>required double latitude = 3;</code>
+       */
+      public boolean hasLatitude() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required double latitude = 3;</code>
+       */
+      public double getLatitude() {
+        return latitude_;
+      }
+      /**
+       * <code>required double latitude = 3;</code>
+       */
+      public Builder setLatitude(double value) {
+        bitField0_ |= 0x00000004;
+        latitude_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required double latitude = 3;</code>
+       */
+      public Builder clearLatitude() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        latitude_ = 0D;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetLocationResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetLocationResponse)
+    private static final cn.ght.protocol.MessageData.GetLocationResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetLocationResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.GetLocationResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetLocationResponse>
+        PARSER = new com.google.protobuf.AbstractParser<GetLocationResponse>() {
+      public GetLocationResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetLocationResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetLocationResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetLocationResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetLocationResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetFileListRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetFileListRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    boolean hasParentDirectory();
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    java.lang.String getParentDirectory();
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getParentDirectoryBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetFileListRequest}
+   */
+  public  static final class GetFileListRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetFileListRequest)
+      GetFileListRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetFileListRequest.newBuilder() to construct.
+    private GetFileListRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetFileListRequest() {
+      deviceName_ = "";
+      pcName_ = "";
+      parentDirectory_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetFileListRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              pcName_ = bs;
+              break;
+            }
+            case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000004;
+              parentDirectory_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetFileListRequest.class, cn.ght.protocol.MessageData.GetFileListRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PC_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PARENT_DIRECTORY_FIELD_NUMBER = 3;
+    private volatile java.lang.Object parentDirectory_;
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    public boolean hasParentDirectory() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    public java.lang.String getParentDirectory() {
+      java.lang.Object ref = parentDirectory_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          parentDirectory_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string parent_directory = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getParentDirectoryBytes() {
+      java.lang.Object ref = parentDirectory_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        parentDirectory_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPcName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasParentDirectory()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, parentDirectory_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, parentDirectory_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetFileListRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetFileListRequest other = (cn.ght.protocol.MessageData.GetFileListRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && (hasParentDirectory() == other.hasParentDirectory());
+      if (hasParentDirectory()) {
+        result = result && getParentDirectory()
+            .equals(other.getParentDirectory());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      if (hasParentDirectory()) {
+        hash = (37 * hash) + PARENT_DIRECTORY_FIELD_NUMBER;
+        hash = (53 * hash) + getParentDirectory().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetFileListRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetFileListRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetFileListRequest)
+        cn.ght.protocol.MessageData.GetFileListRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetFileListRequest.class, cn.ght.protocol.MessageData.GetFileListRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetFileListRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        parentDirectory_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListRequest build() {
+        cn.ght.protocol.MessageData.GetFileListRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListRequest buildPartial() {
+        cn.ght.protocol.MessageData.GetFileListRequest result = new cn.ght.protocol.MessageData.GetFileListRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.pcName_ = pcName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.parentDirectory_ = parentDirectory_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetFileListRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetFileListRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetFileListRequest other) {
+        if (other == cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000002;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        if (other.hasParentDirectory()) {
+          bitField0_ |= 0x00000004;
+          parentDirectory_ = other.parentDirectory_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        if (!hasPcName()) {
+          return false;
+        }
+        if (!hasParentDirectory()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetFileListRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetFileListRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object parentDirectory_ = "";
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public boolean hasParentDirectory() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public java.lang.String getParentDirectory() {
+        java.lang.Object ref = parentDirectory_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            parentDirectory_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getParentDirectoryBytes() {
+        java.lang.Object ref = parentDirectory_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          parentDirectory_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public Builder setParentDirectory(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        parentDirectory_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public Builder clearParentDirectory() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        parentDirectory_ = getDefaultInstance().getParentDirectory();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string parent_directory = 3;</code>
+       */
+      public Builder setParentDirectoryBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        parentDirectory_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetFileListRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetFileListRequest)
+    private static final cn.ght.protocol.MessageData.GetFileListRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetFileListRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.GetFileListRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetFileListRequest>
+        PARSER = new com.google.protobuf.AbstractParser<GetFileListRequest>() {
+      public GetFileListRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetFileListRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetFileListRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetFileListRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetFileListRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface FileInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.FileInfo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    boolean hasFileName();
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    java.lang.String getFileName();
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getFileNameBytes();
+
+    /**
+     * <code>required int32 file_type = 2;</code>
+     */
+    boolean hasFileType();
+    /**
+     * <code>required int32 file_type = 2;</code>
+     */
+    int getFileType();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.FileInfo}
+   */
+  public  static final class FileInfo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.FileInfo)
+      FileInfoOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use FileInfo.newBuilder() to construct.
+    private FileInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private FileInfo() {
+      fileName_ = "";
+      fileType_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private FileInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              fileName_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              fileType_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_FileInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_FileInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.FileInfo.class, cn.ght.protocol.MessageData.FileInfo.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int FILE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object fileName_;
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    public boolean hasFileName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    public java.lang.String getFileName() {
+      java.lang.Object ref = fileName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          fileName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string file_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFileNameBytes() {
+      java.lang.Object ref = fileName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fileName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FILE_TYPE_FIELD_NUMBER = 2;
+    private int fileType_;
+    /**
+     * <code>required int32 file_type = 2;</code>
+     */
+    public boolean hasFileType() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 file_type = 2;</code>
+     */
+    public int getFileType() {
+      return fileType_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasFileName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFileType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fileName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, fileType_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, fileName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, fileType_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.FileInfo)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.FileInfo other = (cn.ght.protocol.MessageData.FileInfo) obj;
+
+      boolean result = true;
+      result = result && (hasFileName() == other.hasFileName());
+      if (hasFileName()) {
+        result = result && getFileName()
+            .equals(other.getFileName());
+      }
+      result = result && (hasFileType() == other.hasFileType());
+      if (hasFileType()) {
+        result = result && (getFileType()
+            == other.getFileType());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasFileName()) {
+        hash = (37 * hash) + FILE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getFileName().hashCode();
+      }
+      if (hasFileType()) {
+        hash = (37 * hash) + FILE_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getFileType();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.FileInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.FileInfo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.FileInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.FileInfo)
+        cn.ght.protocol.MessageData.FileInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_FileInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_FileInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.FileInfo.class, cn.ght.protocol.MessageData.FileInfo.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.FileInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        fileName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        fileType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_FileInfo_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.FileInfo getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.FileInfo.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.FileInfo build() {
+        cn.ght.protocol.MessageData.FileInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.FileInfo buildPartial() {
+        cn.ght.protocol.MessageData.FileInfo result = new cn.ght.protocol.MessageData.FileInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.fileName_ = fileName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.fileType_ = fileType_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.FileInfo) {
+          return mergeFrom((cn.ght.protocol.MessageData.FileInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.FileInfo other) {
+        if (other == cn.ght.protocol.MessageData.FileInfo.getDefaultInstance()) return this;
+        if (other.hasFileName()) {
+          bitField0_ |= 0x00000001;
+          fileName_ = other.fileName_;
+          onChanged();
+        }
+        if (other.hasFileType()) {
+          setFileType(other.getFileType());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasFileName()) {
+          return false;
+        }
+        if (!hasFileType()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.FileInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.FileInfo) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object fileName_ = "";
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public boolean hasFileName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public java.lang.String getFileName() {
+        java.lang.Object ref = fileName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            fileName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFileNameBytes() {
+        java.lang.Object ref = fileName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fileName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public Builder setFileName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        fileName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public Builder clearFileName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        fileName_ = getDefaultInstance().getFileName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string file_name = 1;</code>
+       */
+      public Builder setFileNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        fileName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int fileType_ ;
+      /**
+       * <code>required int32 file_type = 2;</code>
+       */
+      public boolean hasFileType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 file_type = 2;</code>
+       */
+      public int getFileType() {
+        return fileType_;
+      }
+      /**
+       * <code>required int32 file_type = 2;</code>
+       */
+      public Builder setFileType(int value) {
+        bitField0_ |= 0x00000002;
+        fileType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 file_type = 2;</code>
+       */
+      public Builder clearFileType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        fileType_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.FileInfo)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.FileInfo)
+    private static final cn.ght.protocol.MessageData.FileInfo DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.FileInfo();
+    }
+
+    public static cn.ght.protocol.MessageData.FileInfo getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<FileInfo>
+        PARSER = new com.google.protobuf.AbstractParser<FileInfo>() {
+      public FileInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new FileInfo(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<FileInfo> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<FileInfo> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.FileInfo getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetFileListResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.GetFileListResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    java.util.List<cn.ght.protocol.MessageData.FileInfo> 
+        getFileInfoList();
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    cn.ght.protocol.MessageData.FileInfo getFileInfo(int index);
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    int getFileInfoCount();
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    java.util.List<? extends cn.ght.protocol.MessageData.FileInfoOrBuilder> 
+        getFileInfoOrBuilderList();
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    cn.ght.protocol.MessageData.FileInfoOrBuilder getFileInfoOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.GetFileListResponse}
+   */
+  public  static final class GetFileListResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.GetFileListResponse)
+      GetFileListResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetFileListResponse.newBuilder() to construct.
+    private GetFileListResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetFileListResponse() {
+      pcName_ = "";
+      fileInfo_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetFileListResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              pcName_ = bs;
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                fileInfo_ = new java.util.ArrayList<cn.ght.protocol.MessageData.FileInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fileInfo_.add(
+                  input.readMessage(cn.ght.protocol.MessageData.FileInfo.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          fileInfo_ = java.util.Collections.unmodifiableList(fileInfo_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.GetFileListResponse.class, cn.ght.protocol.MessageData.GetFileListResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int PC_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FILE_INFO_FIELD_NUMBER = 2;
+    private java.util.List<cn.ght.protocol.MessageData.FileInfo> fileInfo_;
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    public java.util.List<cn.ght.protocol.MessageData.FileInfo> getFileInfoList() {
+      return fileInfo_;
+    }
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    public java.util.List<? extends cn.ght.protocol.MessageData.FileInfoOrBuilder> 
+        getFileInfoOrBuilderList() {
+      return fileInfo_;
+    }
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    public int getFileInfoCount() {
+      return fileInfo_.size();
+    }
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    public cn.ght.protocol.MessageData.FileInfo getFileInfo(int index) {
+      return fileInfo_.get(index);
+    }
+    /**
+     * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+     */
+    public cn.ght.protocol.MessageData.FileInfoOrBuilder getFileInfoOrBuilder(
+        int index) {
+      return fileInfo_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasPcName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getFileInfoCount(); i++) {
+        if (!getFileInfo(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, pcName_);
+      }
+      for (int i = 0; i < fileInfo_.size(); i++) {
+        output.writeMessage(2, fileInfo_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, pcName_);
+      }
+      for (int i = 0; i < fileInfo_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, fileInfo_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.GetFileListResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.GetFileListResponse other = (cn.ght.protocol.MessageData.GetFileListResponse) obj;
+
+      boolean result = true;
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && getFileInfoList()
+          .equals(other.getFileInfoList());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      if (getFileInfoCount() > 0) {
+        hash = (37 * hash) + FILE_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getFileInfoList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.GetFileListResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.GetFileListResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.GetFileListResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.GetFileListResponse)
+        cn.ght.protocol.MessageData.GetFileListResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.GetFileListResponse.class, cn.ght.protocol.MessageData.GetFileListResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.GetFileListResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getFileInfoFieldBuilder();
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (fileInfoBuilder_ == null) {
+          fileInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          fileInfoBuilder_.clear();
+        }
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_GetFileListResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListResponse build() {
+        cn.ght.protocol.MessageData.GetFileListResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.GetFileListResponse buildPartial() {
+        cn.ght.protocol.MessageData.GetFileListResponse result = new cn.ght.protocol.MessageData.GetFileListResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.pcName_ = pcName_;
+        if (fileInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            fileInfo_ = java.util.Collections.unmodifiableList(fileInfo_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.fileInfo_ = fileInfo_;
+        } else {
+          result.fileInfo_ = fileInfoBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.GetFileListResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.GetFileListResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.GetFileListResponse other) {
+        if (other == cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance()) return this;
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000001;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        if (fileInfoBuilder_ == null) {
+          if (!other.fileInfo_.isEmpty()) {
+            if (fileInfo_.isEmpty()) {
+              fileInfo_ = other.fileInfo_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureFileInfoIsMutable();
+              fileInfo_.addAll(other.fileInfo_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.fileInfo_.isEmpty()) {
+            if (fileInfoBuilder_.isEmpty()) {
+              fileInfoBuilder_.dispose();
+              fileInfoBuilder_ = null;
+              fileInfo_ = other.fileInfo_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              fileInfoBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getFileInfoFieldBuilder() : null;
+            } else {
+              fileInfoBuilder_.addAllMessages(other.fileInfo_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPcName()) {
+          return false;
+        }
+        for (int i = 0; i < getFileInfoCount(); i++) {
+          if (!getFileInfo(i).isInitialized()) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.GetFileListResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.GetFileListResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<cn.ght.protocol.MessageData.FileInfo> fileInfo_ =
+        java.util.Collections.emptyList();
+      private void ensureFileInfoIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          fileInfo_ = new java.util.ArrayList<cn.ght.protocol.MessageData.FileInfo>(fileInfo_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cn.ght.protocol.MessageData.FileInfo, cn.ght.protocol.MessageData.FileInfo.Builder, cn.ght.protocol.MessageData.FileInfoOrBuilder> fileInfoBuilder_;
+
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public java.util.List<cn.ght.protocol.MessageData.FileInfo> getFileInfoList() {
+        if (fileInfoBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(fileInfo_);
+        } else {
+          return fileInfoBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public int getFileInfoCount() {
+        if (fileInfoBuilder_ == null) {
+          return fileInfo_.size();
+        } else {
+          return fileInfoBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public cn.ght.protocol.MessageData.FileInfo getFileInfo(int index) {
+        if (fileInfoBuilder_ == null) {
+          return fileInfo_.get(index);
+        } else {
+          return fileInfoBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder setFileInfo(
+          int index, cn.ght.protocol.MessageData.FileInfo value) {
+        if (fileInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFileInfoIsMutable();
+          fileInfo_.set(index, value);
+          onChanged();
+        } else {
+          fileInfoBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder setFileInfo(
+          int index, cn.ght.protocol.MessageData.FileInfo.Builder builderForValue) {
+        if (fileInfoBuilder_ == null) {
+          ensureFileInfoIsMutable();
+          fileInfo_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          fileInfoBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder addFileInfo(cn.ght.protocol.MessageData.FileInfo value) {
+        if (fileInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFileInfoIsMutable();
+          fileInfo_.add(value);
+          onChanged();
+        } else {
+          fileInfoBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder addFileInfo(
+          int index, cn.ght.protocol.MessageData.FileInfo value) {
+        if (fileInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFileInfoIsMutable();
+          fileInfo_.add(index, value);
+          onChanged();
+        } else {
+          fileInfoBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder addFileInfo(
+          cn.ght.protocol.MessageData.FileInfo.Builder builderForValue) {
+        if (fileInfoBuilder_ == null) {
+          ensureFileInfoIsMutable();
+          fileInfo_.add(builderForValue.build());
+          onChanged();
+        } else {
+          fileInfoBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder addFileInfo(
+          int index, cn.ght.protocol.MessageData.FileInfo.Builder builderForValue) {
+        if (fileInfoBuilder_ == null) {
+          ensureFileInfoIsMutable();
+          fileInfo_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          fileInfoBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder addAllFileInfo(
+          java.lang.Iterable<? extends cn.ght.protocol.MessageData.FileInfo> values) {
+        if (fileInfoBuilder_ == null) {
+          ensureFileInfoIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, fileInfo_);
+          onChanged();
+        } else {
+          fileInfoBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder clearFileInfo() {
+        if (fileInfoBuilder_ == null) {
+          fileInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          fileInfoBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public Builder removeFileInfo(int index) {
+        if (fileInfoBuilder_ == null) {
+          ensureFileInfoIsMutable();
+          fileInfo_.remove(index);
+          onChanged();
+        } else {
+          fileInfoBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public cn.ght.protocol.MessageData.FileInfo.Builder getFileInfoBuilder(
+          int index) {
+        return getFileInfoFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public cn.ght.protocol.MessageData.FileInfoOrBuilder getFileInfoOrBuilder(
+          int index) {
+        if (fileInfoBuilder_ == null) {
+          return fileInfo_.get(index);  } else {
+          return fileInfoBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public java.util.List<? extends cn.ght.protocol.MessageData.FileInfoOrBuilder> 
+           getFileInfoOrBuilderList() {
+        if (fileInfoBuilder_ != null) {
+          return fileInfoBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(fileInfo_);
+        }
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public cn.ght.protocol.MessageData.FileInfo.Builder addFileInfoBuilder() {
+        return getFileInfoFieldBuilder().addBuilder(
+            cn.ght.protocol.MessageData.FileInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public cn.ght.protocol.MessageData.FileInfo.Builder addFileInfoBuilder(
+          int index) {
+        return getFileInfoFieldBuilder().addBuilder(
+            index, cn.ght.protocol.MessageData.FileInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .cn.ght.protocol.FileInfo file_info = 2;</code>
+       */
+      public java.util.List<cn.ght.protocol.MessageData.FileInfo.Builder> 
+           getFileInfoBuilderList() {
+        return getFileInfoFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cn.ght.protocol.MessageData.FileInfo, cn.ght.protocol.MessageData.FileInfo.Builder, cn.ght.protocol.MessageData.FileInfoOrBuilder> 
+          getFileInfoFieldBuilder() {
+        if (fileInfoBuilder_ == null) {
+          fileInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              cn.ght.protocol.MessageData.FileInfo, cn.ght.protocol.MessageData.FileInfo.Builder, cn.ght.protocol.MessageData.FileInfoOrBuilder>(
+                  fileInfo_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          fileInfo_ = null;
+        }
+        return fileInfoBuilder_;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.GetFileListResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.GetFileListResponse)
+    private static final cn.ght.protocol.MessageData.GetFileListResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.GetFileListResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.GetFileListResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetFileListResponse>
+        PARSER = new com.google.protobuf.AbstractParser<GetFileListResponse>() {
+      public GetFileListResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetFileListResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetFileListResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetFileListResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.GetFileListResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface DeleteFileRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.DeleteFileRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    boolean hasFileFullPath();
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    java.lang.String getFileFullPath();
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getFileFullPathBytes();
+
+    /**
+     * <code>required bool is_directory = 4;</code>
+     */
+    boolean hasIsDirectory();
+    /**
+     * <code>required bool is_directory = 4;</code>
+     */
+    boolean getIsDirectory();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.DeleteFileRequest}
+   */
+  public  static final class DeleteFileRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.DeleteFileRequest)
+      DeleteFileRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use DeleteFileRequest.newBuilder() to construct.
+    private DeleteFileRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private DeleteFileRequest() {
+      deviceName_ = "";
+      pcName_ = "";
+      fileFullPath_ = "";
+      isDirectory_ = false;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private DeleteFileRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              pcName_ = bs;
+              break;
+            }
+            case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000004;
+              fileFullPath_ = bs;
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              isDirectory_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.DeleteFileRequest.class, cn.ght.protocol.MessageData.DeleteFileRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PC_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string pc_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int FILE_FULL_PATH_FIELD_NUMBER = 3;
+    private volatile java.lang.Object fileFullPath_;
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    public boolean hasFileFullPath() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    public java.lang.String getFileFullPath() {
+      java.lang.Object ref = fileFullPath_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          fileFullPath_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string file_full_path = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFileFullPathBytes() {
+      java.lang.Object ref = fileFullPath_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fileFullPath_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int IS_DIRECTORY_FIELD_NUMBER = 4;
+    private boolean isDirectory_;
+    /**
+     * <code>required bool is_directory = 4;</code>
+     */
+    public boolean hasIsDirectory() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required bool is_directory = 4;</code>
+     */
+    public boolean getIsDirectory() {
+      return isDirectory_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPcName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasFileFullPath()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasIsDirectory()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, fileFullPath_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBool(4, isDirectory_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, fileFullPath_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isDirectory_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.DeleteFileRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.DeleteFileRequest other = (cn.ght.protocol.MessageData.DeleteFileRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && (hasFileFullPath() == other.hasFileFullPath());
+      if (hasFileFullPath()) {
+        result = result && getFileFullPath()
+            .equals(other.getFileFullPath());
+      }
+      result = result && (hasIsDirectory() == other.hasIsDirectory());
+      if (hasIsDirectory()) {
+        result = result && (getIsDirectory()
+            == other.getIsDirectory());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      if (hasFileFullPath()) {
+        hash = (37 * hash) + FILE_FULL_PATH_FIELD_NUMBER;
+        hash = (53 * hash) + getFileFullPath().hashCode();
+      }
+      if (hasIsDirectory()) {
+        hash = (37 * hash) + IS_DIRECTORY_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getIsDirectory());
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.DeleteFileRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.DeleteFileRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.DeleteFileRequest)
+        cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.DeleteFileRequest.class, cn.ght.protocol.MessageData.DeleteFileRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.DeleteFileRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        fileFullPath_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isDirectory_ = false;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileRequest build() {
+        cn.ght.protocol.MessageData.DeleteFileRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileRequest buildPartial() {
+        cn.ght.protocol.MessageData.DeleteFileRequest result = new cn.ght.protocol.MessageData.DeleteFileRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.pcName_ = pcName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.fileFullPath_ = fileFullPath_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.isDirectory_ = isDirectory_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.DeleteFileRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.DeleteFileRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.DeleteFileRequest other) {
+        if (other == cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000002;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        if (other.hasFileFullPath()) {
+          bitField0_ |= 0x00000004;
+          fileFullPath_ = other.fileFullPath_;
+          onChanged();
+        }
+        if (other.hasIsDirectory()) {
+          setIsDirectory(other.getIsDirectory());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        if (!hasPcName()) {
+          return false;
+        }
+        if (!hasFileFullPath()) {
+          return false;
+        }
+        if (!hasIsDirectory()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.DeleteFileRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.DeleteFileRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 2;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object fileFullPath_ = "";
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public boolean hasFileFullPath() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public java.lang.String getFileFullPath() {
+        java.lang.Object ref = fileFullPath_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            fileFullPath_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFileFullPathBytes() {
+        java.lang.Object ref = fileFullPath_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          fileFullPath_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public Builder setFileFullPath(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        fileFullPath_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public Builder clearFileFullPath() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        fileFullPath_ = getDefaultInstance().getFileFullPath();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string file_full_path = 3;</code>
+       */
+      public Builder setFileFullPathBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        fileFullPath_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean isDirectory_ ;
+      /**
+       * <code>required bool is_directory = 4;</code>
+       */
+      public boolean hasIsDirectory() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required bool is_directory = 4;</code>
+       */
+      public boolean getIsDirectory() {
+        return isDirectory_;
+      }
+      /**
+       * <code>required bool is_directory = 4;</code>
+       */
+      public Builder setIsDirectory(boolean value) {
+        bitField0_ |= 0x00000008;
+        isDirectory_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bool is_directory = 4;</code>
+       */
+      public Builder clearIsDirectory() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        isDirectory_ = false;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.DeleteFileRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.DeleteFileRequest)
+    private static final cn.ght.protocol.MessageData.DeleteFileRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.DeleteFileRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.DeleteFileRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<DeleteFileRequest>
+        PARSER = new com.google.protobuf.AbstractParser<DeleteFileRequest>() {
+      public DeleteFileRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new DeleteFileRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<DeleteFileRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<DeleteFileRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.DeleteFileRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface DeleteFileResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.DeleteFileResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+
+    /**
+     * <code>required bool delete_success = 2;</code>
+     */
+    boolean hasDeleteSuccess();
+    /**
+     * <code>required bool delete_success = 2;</code>
+     */
+    boolean getDeleteSuccess();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.DeleteFileResponse}
+   */
+  public  static final class DeleteFileResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.DeleteFileResponse)
+      DeleteFileResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use DeleteFileResponse.newBuilder() to construct.
+    private DeleteFileResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private DeleteFileResponse() {
+      pcName_ = "";
+      deleteSuccess_ = false;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private DeleteFileResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              pcName_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              deleteSuccess_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.DeleteFileResponse.class, cn.ght.protocol.MessageData.DeleteFileResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int PC_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string pc_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int DELETE_SUCCESS_FIELD_NUMBER = 2;
+    private boolean deleteSuccess_;
+    /**
+     * <code>required bool delete_success = 2;</code>
+     */
+    public boolean hasDeleteSuccess() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required bool delete_success = 2;</code>
+     */
+    public boolean getDeleteSuccess() {
+      return deleteSuccess_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasPcName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDeleteSuccess()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, pcName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, deleteSuccess_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, pcName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, deleteSuccess_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.DeleteFileResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.DeleteFileResponse other = (cn.ght.protocol.MessageData.DeleteFileResponse) obj;
+
+      boolean result = true;
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && (hasDeleteSuccess() == other.hasDeleteSuccess());
+      if (hasDeleteSuccess()) {
+        result = result && (getDeleteSuccess()
+            == other.getDeleteSuccess());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      if (hasDeleteSuccess()) {
+        hash = (37 * hash) + DELETE_SUCCESS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getDeleteSuccess());
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.DeleteFileResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.DeleteFileResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.DeleteFileResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.DeleteFileResponse)
+        cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.DeleteFileResponse.class, cn.ght.protocol.MessageData.DeleteFileResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.DeleteFileResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deleteSuccess_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_DeleteFileResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileResponse build() {
+        cn.ght.protocol.MessageData.DeleteFileResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.DeleteFileResponse buildPartial() {
+        cn.ght.protocol.MessageData.DeleteFileResponse result = new cn.ght.protocol.MessageData.DeleteFileResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.pcName_ = pcName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.deleteSuccess_ = deleteSuccess_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.DeleteFileResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.DeleteFileResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.DeleteFileResponse other) {
+        if (other == cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance()) return this;
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000001;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        if (other.hasDeleteSuccess()) {
+          setDeleteSuccess(other.getDeleteSuccess());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPcName()) {
+          return false;
+        }
+        if (!hasDeleteSuccess()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.DeleteFileResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.DeleteFileResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string pc_name = 1;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean deleteSuccess_ ;
+      /**
+       * <code>required bool delete_success = 2;</code>
+       */
+      public boolean hasDeleteSuccess() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required bool delete_success = 2;</code>
+       */
+      public boolean getDeleteSuccess() {
+        return deleteSuccess_;
+      }
+      /**
+       * <code>required bool delete_success = 2;</code>
+       */
+      public Builder setDeleteSuccess(boolean value) {
+        bitField0_ |= 0x00000002;
+        deleteSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bool delete_success = 2;</code>
+       */
+      public Builder clearDeleteSuccess() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        deleteSuccess_ = false;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.DeleteFileResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.DeleteFileResponse)
+    private static final cn.ght.protocol.MessageData.DeleteFileResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.DeleteFileResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.DeleteFileResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<DeleteFileResponse>
+        PARSER = new com.google.protobuf.AbstractParser<DeleteFileResponse>() {
+      public DeleteFileResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new DeleteFileResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<DeleteFileResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<DeleteFileResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.DeleteFileResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetPowerOffRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.SetPowerOffRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    boolean hasDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    java.lang.String getDeviceName();
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDeviceNameBytes();
+
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.SetPowerOffRequest}
+   */
+  public  static final class SetPowerOffRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.SetPowerOffRequest)
+      SetPowerOffRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetPowerOffRequest.newBuilder() to construct.
+    private SetPowerOffRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetPowerOffRequest() {
+      deviceName_ = "";
+      moduleName_ = "";
+      pcName_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetPowerOffRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              deviceName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              moduleName_ = bs;
+              break;
+            }
+            case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000004;
+              pcName_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.SetPowerOffRequest.class, cn.ght.protocol.MessageData.SetPowerOffRequest.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceName_;
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public boolean hasDeviceName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public java.lang.String getDeviceName() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          deviceName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string device_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDeviceNameBytes() {
+      java.lang.Object ref = deviceName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        deviceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MODULE_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string module_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PC_NAME_FIELD_NUMBER = 3;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string pc_name = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasDeviceName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, moduleName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, pcName_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, moduleName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, pcName_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.SetPowerOffRequest)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.SetPowerOffRequest other = (cn.ght.protocol.MessageData.SetPowerOffRequest) obj;
+
+      boolean result = true;
+      result = result && (hasDeviceName() == other.hasDeviceName());
+      if (hasDeviceName()) {
+        result = result && getDeviceName()
+            .equals(other.getDeviceName());
+      }
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasDeviceName()) {
+        hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceName().hashCode();
+      }
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.SetPowerOffRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.SetPowerOffRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.SetPowerOffRequest)
+        cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.SetPowerOffRequest.class, cn.ght.protocol.MessageData.SetPowerOffRequest.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.SetPowerOffRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        deviceName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffRequest getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffRequest build() {
+        cn.ght.protocol.MessageData.SetPowerOffRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffRequest buildPartial() {
+        cn.ght.protocol.MessageData.SetPowerOffRequest result = new cn.ght.protocol.MessageData.SetPowerOffRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.deviceName_ = deviceName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.moduleName_ = moduleName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.pcName_ = pcName_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.SetPowerOffRequest) {
+          return mergeFrom((cn.ght.protocol.MessageData.SetPowerOffRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.SetPowerOffRequest other) {
+        if (other == cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance()) return this;
+        if (other.hasDeviceName()) {
+          bitField0_ |= 0x00000001;
+          deviceName_ = other.deviceName_;
+          onChanged();
+        }
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000002;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000004;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasDeviceName()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.SetPowerOffRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.SetPowerOffRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object deviceName_ = "";
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public boolean hasDeviceName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public java.lang.String getDeviceName() {
+        java.lang.Object ref = deviceName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            deviceName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDeviceNameBytes() {
+        java.lang.Object ref = deviceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          deviceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder clearDeviceName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        deviceName_ = getDefaultInstance().getDeviceName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string device_name = 1;</code>
+       */
+      public Builder setDeviceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        deviceName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string module_name = 2;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string pc_name = 3;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.SetPowerOffRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.SetPowerOffRequest)
+    private static final cn.ght.protocol.MessageData.SetPowerOffRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.SetPowerOffRequest();
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOffRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<SetPowerOffRequest>
+        PARSER = new com.google.protobuf.AbstractParser<SetPowerOffRequest>() {
+      public SetPowerOffRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetPowerOffRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetPowerOffRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SetPowerOffRequest> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.SetPowerOffRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetPowerOffResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cn.ght.protocol.SetPowerOffResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    boolean hasModuleName();
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    java.lang.String getModuleName();
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getModuleNameBytes();
+
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    boolean hasPcName();
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    java.lang.String getPcName();
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getPcNameBytes();
+
+    /**
+     * <code>required bool power_off_success = 3;</code>
+     */
+    boolean hasPowerOffSuccess();
+    /**
+     * <code>required bool power_off_success = 3;</code>
+     */
+    boolean getPowerOffSuccess();
+  }
+  /**
+   * Protobuf type {@code cn.ght.protocol.SetPowerOffResponse}
+   */
+  public  static final class SetPowerOffResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cn.ght.protocol.SetPowerOffResponse)
+      SetPowerOffResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetPowerOffResponse.newBuilder() to construct.
+    private SetPowerOffResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetPowerOffResponse() {
+      moduleName_ = "";
+      pcName_ = "";
+      powerOffSuccess_ = false;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetPowerOffResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              moduleName_ = bs;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              pcName_ = bs;
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              powerOffSuccess_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cn.ght.protocol.MessageData.SetPowerOffResponse.class, cn.ght.protocol.MessageData.SetPowerOffResponse.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int MODULE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object moduleName_;
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    public boolean hasModuleName() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    public java.lang.String getModuleName() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          moduleName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string module_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getModuleNameBytes() {
+      java.lang.Object ref = moduleName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        moduleName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PC_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object pcName_;
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    public boolean hasPcName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    public java.lang.String getPcName() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          pcName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string pc_name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPcNameBytes() {
+      java.lang.Object ref = pcName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pcName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int POWER_OFF_SUCCESS_FIELD_NUMBER = 3;
+    private boolean powerOffSuccess_;
+    /**
+     * <code>required bool power_off_success = 3;</code>
+     */
+    public boolean hasPowerOffSuccess() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required bool power_off_success = 3;</code>
+     */
+    public boolean getPowerOffSuccess() {
+      return powerOffSuccess_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasPowerOffSuccess()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, powerOffSuccess_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, moduleName_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pcName_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, powerOffSuccess_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cn.ght.protocol.MessageData.SetPowerOffResponse)) {
+        return super.equals(obj);
+      }
+      cn.ght.protocol.MessageData.SetPowerOffResponse other = (cn.ght.protocol.MessageData.SetPowerOffResponse) obj;
+
+      boolean result = true;
+      result = result && (hasModuleName() == other.hasModuleName());
+      if (hasModuleName()) {
+        result = result && getModuleName()
+            .equals(other.getModuleName());
+      }
+      result = result && (hasPcName() == other.hasPcName());
+      if (hasPcName()) {
+        result = result && getPcName()
+            .equals(other.getPcName());
+      }
+      result = result && (hasPowerOffSuccess() == other.hasPowerOffSuccess());
+      if (hasPowerOffSuccess()) {
+        result = result && (getPowerOffSuccess()
+            == other.getPowerOffSuccess());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasModuleName()) {
+        hash = (37 * hash) + MODULE_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getModuleName().hashCode();
+      }
+      if (hasPcName()) {
+        hash = (37 * hash) + PC_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getPcName().hashCode();
+      }
+      if (hasPowerOffSuccess()) {
+        hash = (37 * hash) + POWER_OFF_SUCCESS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPowerOffSuccess());
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cn.ght.protocol.MessageData.SetPowerOffResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code cn.ght.protocol.SetPowerOffResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cn.ght.protocol.SetPowerOffResponse)
+        cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cn.ght.protocol.MessageData.SetPowerOffResponse.class, cn.ght.protocol.MessageData.SetPowerOffResponse.Builder.class);
+      }
+
+      // Construct using cn.ght.protocol.MessageData.SetPowerOffResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        moduleName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pcName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        powerOffSuccess_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cn.ght.protocol.MessageData.internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffResponse getDefaultInstanceForType() {
+        return cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance();
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffResponse build() {
+        cn.ght.protocol.MessageData.SetPowerOffResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cn.ght.protocol.MessageData.SetPowerOffResponse buildPartial() {
+        cn.ght.protocol.MessageData.SetPowerOffResponse result = new cn.ght.protocol.MessageData.SetPowerOffResponse(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.moduleName_ = moduleName_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.pcName_ = pcName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.powerOffSuccess_ = powerOffSuccess_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cn.ght.protocol.MessageData.SetPowerOffResponse) {
+          return mergeFrom((cn.ght.protocol.MessageData.SetPowerOffResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cn.ght.protocol.MessageData.SetPowerOffResponse other) {
+        if (other == cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance()) return this;
+        if (other.hasModuleName()) {
+          bitField0_ |= 0x00000001;
+          moduleName_ = other.moduleName_;
+          onChanged();
+        }
+        if (other.hasPcName()) {
+          bitField0_ |= 0x00000002;
+          pcName_ = other.pcName_;
+          onChanged();
+        }
+        if (other.hasPowerOffSuccess()) {
+          setPowerOffSuccess(other.getPowerOffSuccess());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPowerOffSuccess()) {
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cn.ght.protocol.MessageData.SetPowerOffResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cn.ght.protocol.MessageData.SetPowerOffResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object moduleName_ = "";
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public boolean hasModuleName() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public java.lang.String getModuleName() {
+        java.lang.Object ref = moduleName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            moduleName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getModuleNameBytes() {
+        java.lang.Object ref = moduleName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          moduleName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public Builder setModuleName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public Builder clearModuleName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        moduleName_ = getDefaultInstance().getModuleName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string module_name = 1;</code>
+       */
+      public Builder setModuleNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        moduleName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object pcName_ = "";
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public boolean hasPcName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public java.lang.String getPcName() {
+        java.lang.Object ref = pcName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            pcName_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPcNameBytes() {
+        java.lang.Object ref = pcName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pcName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public Builder setPcName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public Builder clearPcName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pcName_ = getDefaultInstance().getPcName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string pc_name = 2;</code>
+       */
+      public Builder setPcNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        pcName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean powerOffSuccess_ ;
+      /**
+       * <code>required bool power_off_success = 3;</code>
+       */
+      public boolean hasPowerOffSuccess() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required bool power_off_success = 3;</code>
+       */
+      public boolean getPowerOffSuccess() {
+        return powerOffSuccess_;
+      }
+      /**
+       * <code>required bool power_off_success = 3;</code>
+       */
+      public Builder setPowerOffSuccess(boolean value) {
+        bitField0_ |= 0x00000004;
+        powerOffSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required bool power_off_success = 3;</code>
+       */
+      public Builder clearPowerOffSuccess() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        powerOffSuccess_ = false;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cn.ght.protocol.SetPowerOffResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cn.ght.protocol.SetPowerOffResponse)
+    private static final cn.ght.protocol.MessageData.SetPowerOffResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cn.ght.protocol.MessageData.SetPowerOffResponse();
+    }
+
+    public static cn.ght.protocol.MessageData.SetPowerOffResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<SetPowerOffResponse>
+        PARSER = new com.google.protobuf.AbstractParser<SetPowerOffResponse>() {
+      public SetPowerOffResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetPowerOffResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetPowerOffResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SetPowerOffResponse> getParserForType() {
+      return PARSER;
+    }
+
+    public cn.ght.protocol.MessageData.SetPowerOffResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface MessageOrBuilder extends
       // @@protoc_insertion_point(interface_extends:cn.ght.protocol.Message)
       com.google.protobuf.MessageOrBuilder {
@@ -4058,7 +15143,7 @@ public final class MessageData {
 
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4066,7 +15151,7 @@ public final class MessageData {
     boolean hasLoginRequest();
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4074,7 +15159,7 @@ public final class MessageData {
     cn.ght.protocol.MessageData.LoginRequest getLoginRequest();
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4109,7 +15194,7 @@ public final class MessageData {
 
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4117,7 +15202,7 @@ public final class MessageData {
     boolean hasLoginResponse();
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4125,7 +15210,7 @@ public final class MessageData {
     cn.ght.protocol.MessageData.LoginResponse getLoginResponse();
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4157,6 +15242,200 @@ public final class MessageData {
      * <code>optional .cn.ght.protocol.ReportGPSQuery report_gps_cmd = 7;</code>
      */
     cn.ght.protocol.MessageData.ReportGPSQueryOrBuilder getReportGpsCmdOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    boolean hasGetPcListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    cn.ght.protocol.MessageData.GetPCListResponse getGetPcListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    cn.ght.protocol.MessageData.GetPCListResponseOrBuilder getGetPcListResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    boolean hasGetModuleListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    cn.ght.protocol.MessageData.GetModuleListResponse getGetModuleListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder getGetModuleListResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    boolean hasSetPowerOnResponse();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOnResponse getSetPowerOnResponse();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder getSetPowerOnResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    boolean hasGetLocationResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    cn.ght.protocol.MessageData.GetLocationResponse getGetLocationResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    cn.ght.protocol.MessageData.GetLocationResponseOrBuilder getGetLocationResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    boolean hasGetFileListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    cn.ght.protocol.MessageData.GetFileListResponse getGetFileListResponse();
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    cn.ght.protocol.MessageData.GetFileListResponseOrBuilder getGetFileListResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    boolean hasDeleteFileResponse();
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    cn.ght.protocol.MessageData.DeleteFileResponse getDeleteFileResponse();
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder getDeleteFileResponseOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    boolean hasSetPowerOffResponse();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOffResponse getSetPowerOffResponse();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder getSetPowerOffResponseOrBuilder();
+
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    boolean hasGetPcListRequest();
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    cn.ght.protocol.MessageData.GetPCListRequest getGetPcListRequest();
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    cn.ght.protocol.MessageData.GetPCListRequestOrBuilder getGetPcListRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    boolean hasGetModuleListRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    cn.ght.protocol.MessageData.GetModuleListRequest getGetModuleListRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder getGetModuleListRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    boolean hasSetPowerOnRequest();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOnRequest getSetPowerOnRequest();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder getSetPowerOnRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    boolean hasGetLocationRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    cn.ght.protocol.MessageData.GetLocationRequest getGetLocationRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    cn.ght.protocol.MessageData.GetLocationRequestOrBuilder getGetLocationRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    boolean hasGetFileListRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    cn.ght.protocol.MessageData.GetFileListRequest getGetFileListRequest();
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    cn.ght.protocol.MessageData.GetFileListRequestOrBuilder getGetFileListRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    boolean hasDeleteFileRequest();
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    cn.ght.protocol.MessageData.DeleteFileRequest getDeleteFileRequest();
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder getDeleteFileRequestOrBuilder();
+
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    boolean hasSetPowerOffRequest();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOffRequest getSetPowerOffRequest();
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder getSetPowerOffRequestOrBuilder();
   }
   /**
    * Protobuf type {@code cn.ght.protocol.Message}
@@ -4294,6 +15573,188 @@ public final class MessageData {
               bitField0_ |= 0x00000040;
               break;
             }
+            case 66: {
+              cn.ght.protocol.MessageData.GetPCListRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00004000) == 0x00004000)) {
+                subBuilder = getPcListRequest_.toBuilder();
+              }
+              getPcListRequest_ = input.readMessage(cn.ght.protocol.MessageData.GetPCListRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getPcListRequest_);
+                getPcListRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00004000;
+              break;
+            }
+            case 74: {
+              cn.ght.protocol.MessageData.GetModuleListRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00008000) == 0x00008000)) {
+                subBuilder = getModuleListRequest_.toBuilder();
+              }
+              getModuleListRequest_ = input.readMessage(cn.ght.protocol.MessageData.GetModuleListRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getModuleListRequest_);
+                getModuleListRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00008000;
+              break;
+            }
+            case 82: {
+              cn.ght.protocol.MessageData.SetPowerOnRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00010000) == 0x00010000)) {
+                subBuilder = setPowerOnRequest_.toBuilder();
+              }
+              setPowerOnRequest_ = input.readMessage(cn.ght.protocol.MessageData.SetPowerOnRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(setPowerOnRequest_);
+                setPowerOnRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00010000;
+              break;
+            }
+            case 90: {
+              cn.ght.protocol.MessageData.GetLocationRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00020000) == 0x00020000)) {
+                subBuilder = getLocationRequest_.toBuilder();
+              }
+              getLocationRequest_ = input.readMessage(cn.ght.protocol.MessageData.GetLocationRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getLocationRequest_);
+                getLocationRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00020000;
+              break;
+            }
+            case 98: {
+              cn.ght.protocol.MessageData.GetFileListRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00040000) == 0x00040000)) {
+                subBuilder = getFileListRequest_.toBuilder();
+              }
+              getFileListRequest_ = input.readMessage(cn.ght.protocol.MessageData.GetFileListRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getFileListRequest_);
+                getFileListRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00040000;
+              break;
+            }
+            case 106: {
+              cn.ght.protocol.MessageData.DeleteFileRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00080000) == 0x00080000)) {
+                subBuilder = deleteFileRequest_.toBuilder();
+              }
+              deleteFileRequest_ = input.readMessage(cn.ght.protocol.MessageData.DeleteFileRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(deleteFileRequest_);
+                deleteFileRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00080000;
+              break;
+            }
+            case 114: {
+              cn.ght.protocol.MessageData.SetPowerOffRequest.Builder subBuilder = null;
+              if (((bitField0_ & 0x00100000) == 0x00100000)) {
+                subBuilder = setPowerOffRequest_.toBuilder();
+              }
+              setPowerOffRequest_ = input.readMessage(cn.ght.protocol.MessageData.SetPowerOffRequest.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(setPowerOffRequest_);
+                setPowerOffRequest_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00100000;
+              break;
+            }
+            case 122: {
+              cn.ght.protocol.MessageData.GetPCListResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000080) == 0x00000080)) {
+                subBuilder = getPcListResponse_.toBuilder();
+              }
+              getPcListResponse_ = input.readMessage(cn.ght.protocol.MessageData.GetPCListResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getPcListResponse_);
+                getPcListResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000080;
+              break;
+            }
+            case 130: {
+              cn.ght.protocol.MessageData.GetModuleListResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000100) == 0x00000100)) {
+                subBuilder = getModuleListResponse_.toBuilder();
+              }
+              getModuleListResponse_ = input.readMessage(cn.ght.protocol.MessageData.GetModuleListResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getModuleListResponse_);
+                getModuleListResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000100;
+              break;
+            }
+            case 138: {
+              cn.ght.protocol.MessageData.SetPowerOnResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000200) == 0x00000200)) {
+                subBuilder = setPowerOnResponse_.toBuilder();
+              }
+              setPowerOnResponse_ = input.readMessage(cn.ght.protocol.MessageData.SetPowerOnResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(setPowerOnResponse_);
+                setPowerOnResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000200;
+              break;
+            }
+            case 146: {
+              cn.ght.protocol.MessageData.GetLocationResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000400) == 0x00000400)) {
+                subBuilder = getLocationResponse_.toBuilder();
+              }
+              getLocationResponse_ = input.readMessage(cn.ght.protocol.MessageData.GetLocationResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getLocationResponse_);
+                getLocationResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000400;
+              break;
+            }
+            case 154: {
+              cn.ght.protocol.MessageData.GetFileListResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000800) == 0x00000800)) {
+                subBuilder = getFileListResponse_.toBuilder();
+              }
+              getFileListResponse_ = input.readMessage(cn.ght.protocol.MessageData.GetFileListResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(getFileListResponse_);
+                getFileListResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000800;
+              break;
+            }
+            case 162: {
+              cn.ght.protocol.MessageData.DeleteFileResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00001000) == 0x00001000)) {
+                subBuilder = deleteFileResponse_.toBuilder();
+              }
+              deleteFileResponse_ = input.readMessage(cn.ght.protocol.MessageData.DeleteFileResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(deleteFileResponse_);
+                deleteFileResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00001000;
+              break;
+            }
+            case 170: {
+              cn.ght.protocol.MessageData.SetPowerOffResponse.Builder subBuilder = null;
+              if (((bitField0_ & 0x00002000) == 0x00002000)) {
+                subBuilder = setPowerOffResponse_.toBuilder();
+              }
+              setPowerOffResponse_ = input.readMessage(cn.ght.protocol.MessageData.SetPowerOffResponse.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(setPowerOffResponse_);
+                setPowerOffResponse_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00002000;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -4339,7 +15800,7 @@ public final class MessageData {
     private cn.ght.protocol.MessageData.LoginRequest loginRequest_;
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4349,7 +15810,7 @@ public final class MessageData {
     }
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4359,7 +15820,7 @@ public final class MessageData {
     }
     /**
      * <pre>
-     *M
+     *Module
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -4414,7 +15875,7 @@ public final class MessageData {
     private cn.ght.protocol.MessageData.LoginResponse loginResponse_;
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4424,7 +15885,7 @@ public final class MessageData {
     }
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4434,7 +15895,7 @@ public final class MessageData {
     }
     /**
      * <pre>
-     *S
+     *Server
      * </pre>
      *
      * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -4485,6 +15946,312 @@ public final class MessageData {
       return reportGpsCmd_ == null ? cn.ght.protocol.MessageData.ReportGPSQuery.getDefaultInstance() : reportGpsCmd_;
     }
 
+    public static final int GET_PC_LIST_RESPONSE_FIELD_NUMBER = 15;
+    private cn.ght.protocol.MessageData.GetPCListResponse getPcListResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    public boolean hasGetPcListResponse() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    public cn.ght.protocol.MessageData.GetPCListResponse getGetPcListResponse() {
+      return getPcListResponse_ == null ? cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance() : getPcListResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+     */
+    public cn.ght.protocol.MessageData.GetPCListResponseOrBuilder getGetPcListResponseOrBuilder() {
+      return getPcListResponse_ == null ? cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance() : getPcListResponse_;
+    }
+
+    public static final int GET_MODULE_LIST_RESPONSE_FIELD_NUMBER = 16;
+    private cn.ght.protocol.MessageData.GetModuleListResponse getModuleListResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    public boolean hasGetModuleListResponse() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    public cn.ght.protocol.MessageData.GetModuleListResponse getGetModuleListResponse() {
+      return getModuleListResponse_ == null ? cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance() : getModuleListResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+     */
+    public cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder getGetModuleListResponseOrBuilder() {
+      return getModuleListResponse_ == null ? cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance() : getModuleListResponse_;
+    }
+
+    public static final int SET_POWER_ON_RESPONSE_FIELD_NUMBER = 17;
+    private cn.ght.protocol.MessageData.SetPowerOnResponse setPowerOnResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    public boolean hasSetPowerOnResponse() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOnResponse getSetPowerOnResponse() {
+      return setPowerOnResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance() : setPowerOnResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder getSetPowerOnResponseOrBuilder() {
+      return setPowerOnResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance() : setPowerOnResponse_;
+    }
+
+    public static final int GET_LOCATION_RESPONSE_FIELD_NUMBER = 18;
+    private cn.ght.protocol.MessageData.GetLocationResponse getLocationResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    public boolean hasGetLocationResponse() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    public cn.ght.protocol.MessageData.GetLocationResponse getGetLocationResponse() {
+      return getLocationResponse_ == null ? cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance() : getLocationResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+     */
+    public cn.ght.protocol.MessageData.GetLocationResponseOrBuilder getGetLocationResponseOrBuilder() {
+      return getLocationResponse_ == null ? cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance() : getLocationResponse_;
+    }
+
+    public static final int GET_FILE_LIST_RESPONSE_FIELD_NUMBER = 19;
+    private cn.ght.protocol.MessageData.GetFileListResponse getFileListResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    public boolean hasGetFileListResponse() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    public cn.ght.protocol.MessageData.GetFileListResponse getGetFileListResponse() {
+      return getFileListResponse_ == null ? cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance() : getFileListResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+     */
+    public cn.ght.protocol.MessageData.GetFileListResponseOrBuilder getGetFileListResponseOrBuilder() {
+      return getFileListResponse_ == null ? cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance() : getFileListResponse_;
+    }
+
+    public static final int DELETE_FILE_RESPONSE_FIELD_NUMBER = 20;
+    private cn.ght.protocol.MessageData.DeleteFileResponse deleteFileResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    public boolean hasDeleteFileResponse() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    public cn.ght.protocol.MessageData.DeleteFileResponse getDeleteFileResponse() {
+      return deleteFileResponse_ == null ? cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance() : deleteFileResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+     */
+    public cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder getDeleteFileResponseOrBuilder() {
+      return deleteFileResponse_ == null ? cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance() : deleteFileResponse_;
+    }
+
+    public static final int SET_POWER_OFF_RESPONSE_FIELD_NUMBER = 21;
+    private cn.ght.protocol.MessageData.SetPowerOffResponse setPowerOffResponse_;
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    public boolean hasSetPowerOffResponse() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOffResponse getSetPowerOffResponse() {
+      return setPowerOffResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance() : setPowerOffResponse_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder getSetPowerOffResponseOrBuilder() {
+      return setPowerOffResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance() : setPowerOffResponse_;
+    }
+
+    public static final int GET_PC_LIST_REQUEST_FIELD_NUMBER = 8;
+    private cn.ght.protocol.MessageData.GetPCListRequest getPcListRequest_;
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    public boolean hasGetPcListRequest() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    public cn.ght.protocol.MessageData.GetPCListRequest getGetPcListRequest() {
+      return getPcListRequest_ == null ? cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance() : getPcListRequest_;
+    }
+    /**
+     * <pre>
+     *Mobile
+     * </pre>
+     *
+     * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+     */
+    public cn.ght.protocol.MessageData.GetPCListRequestOrBuilder getGetPcListRequestOrBuilder() {
+      return getPcListRequest_ == null ? cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance() : getPcListRequest_;
+    }
+
+    public static final int GET_MODULE_LIST_REQUEST_FIELD_NUMBER = 9;
+    private cn.ght.protocol.MessageData.GetModuleListRequest getModuleListRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    public boolean hasGetModuleListRequest() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    public cn.ght.protocol.MessageData.GetModuleListRequest getGetModuleListRequest() {
+      return getModuleListRequest_ == null ? cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance() : getModuleListRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+     */
+    public cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder getGetModuleListRequestOrBuilder() {
+      return getModuleListRequest_ == null ? cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance() : getModuleListRequest_;
+    }
+
+    public static final int SET_POWER_ON_REQUEST_FIELD_NUMBER = 10;
+    private cn.ght.protocol.MessageData.SetPowerOnRequest setPowerOnRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    public boolean hasSetPowerOnRequest() {
+      return ((bitField0_ & 0x00010000) == 0x00010000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOnRequest getSetPowerOnRequest() {
+      return setPowerOnRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance() : setPowerOnRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder getSetPowerOnRequestOrBuilder() {
+      return setPowerOnRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance() : setPowerOnRequest_;
+    }
+
+    public static final int GET_LOCATION_REQUEST_FIELD_NUMBER = 11;
+    private cn.ght.protocol.MessageData.GetLocationRequest getLocationRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    public boolean hasGetLocationRequest() {
+      return ((bitField0_ & 0x00020000) == 0x00020000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    public cn.ght.protocol.MessageData.GetLocationRequest getGetLocationRequest() {
+      return getLocationRequest_ == null ? cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance() : getLocationRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+     */
+    public cn.ght.protocol.MessageData.GetLocationRequestOrBuilder getGetLocationRequestOrBuilder() {
+      return getLocationRequest_ == null ? cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance() : getLocationRequest_;
+    }
+
+    public static final int GET_FILE_LIST_REQUEST_FIELD_NUMBER = 12;
+    private cn.ght.protocol.MessageData.GetFileListRequest getFileListRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    public boolean hasGetFileListRequest() {
+      return ((bitField0_ & 0x00040000) == 0x00040000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    public cn.ght.protocol.MessageData.GetFileListRequest getGetFileListRequest() {
+      return getFileListRequest_ == null ? cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance() : getFileListRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+     */
+    public cn.ght.protocol.MessageData.GetFileListRequestOrBuilder getGetFileListRequestOrBuilder() {
+      return getFileListRequest_ == null ? cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance() : getFileListRequest_;
+    }
+
+    public static final int DELETE_FILE_REQUEST_FIELD_NUMBER = 13;
+    private cn.ght.protocol.MessageData.DeleteFileRequest deleteFileRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    public boolean hasDeleteFileRequest() {
+      return ((bitField0_ & 0x00080000) == 0x00080000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    public cn.ght.protocol.MessageData.DeleteFileRequest getDeleteFileRequest() {
+      return deleteFileRequest_ == null ? cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance() : deleteFileRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+     */
+    public cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder getDeleteFileRequestOrBuilder() {
+      return deleteFileRequest_ == null ? cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance() : deleteFileRequest_;
+    }
+
+    public static final int SET_POWER_OFF_REQUEST_FIELD_NUMBER = 14;
+    private cn.ght.protocol.MessageData.SetPowerOffRequest setPowerOffRequest_;
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    public boolean hasSetPowerOffRequest() {
+      return ((bitField0_ & 0x00100000) == 0x00100000);
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOffRequest getSetPowerOffRequest() {
+      return setPowerOffRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance() : setPowerOffRequest_;
+    }
+    /**
+     * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+     */
+    public cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder getSetPowerOffRequestOrBuilder() {
+      return setPowerOffRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance() : setPowerOffRequest_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -4519,6 +16286,78 @@ public final class MessageData {
           return false;
         }
       }
+      if (hasSetPowerOnResponse()) {
+        if (!getSetPowerOnResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetLocationResponse()) {
+        if (!getGetLocationResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetFileListResponse()) {
+        if (!getGetFileListResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasDeleteFileResponse()) {
+        if (!getDeleteFileResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSetPowerOffResponse()) {
+        if (!getSetPowerOffResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetPcListRequest()) {
+        if (!getGetPcListRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetModuleListRequest()) {
+        if (!getGetModuleListRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSetPowerOnRequest()) {
+        if (!getSetPowerOnRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetLocationRequest()) {
+        if (!getGetLocationRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGetFileListRequest()) {
+        if (!getGetFileListRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasDeleteFileRequest()) {
+        if (!getDeleteFileRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSetPowerOffRequest()) {
+        if (!getSetPowerOffRequest().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -4545,6 +16384,48 @@ public final class MessageData {
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         output.writeMessage(7, getReportGpsCmd());
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeMessage(8, getGetPcListRequest());
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeMessage(9, getGetModuleListRequest());
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeMessage(10, getSetPowerOnRequest());
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        output.writeMessage(11, getGetLocationRequest());
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        output.writeMessage(12, getGetFileListRequest());
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        output.writeMessage(13, getDeleteFileRequest());
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        output.writeMessage(14, getSetPowerOffRequest());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeMessage(15, getGetPcListResponse());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeMessage(16, getGetModuleListResponse());
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeMessage(17, getSetPowerOnResponse());
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeMessage(18, getGetLocationResponse());
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeMessage(19, getGetFileListResponse());
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeMessage(20, getDeleteFileResponse());
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeMessage(21, getSetPowerOffResponse());
       }
       unknownFields.writeTo(output);
     }
@@ -4581,6 +16462,62 @@ public final class MessageData {
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getReportGpsCmd());
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getGetPcListRequest());
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getGetModuleListRequest());
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getSetPowerOnRequest());
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getGetLocationRequest());
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getGetFileListRequest());
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getDeleteFileRequest());
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getSetPowerOffRequest());
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getGetPcListResponse());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(16, getGetModuleListResponse());
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(17, getSetPowerOnResponse());
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(18, getGetLocationResponse());
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(19, getGetFileListResponse());
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20, getDeleteFileResponse());
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(21, getSetPowerOffResponse());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4632,6 +16569,76 @@ public final class MessageData {
         result = result && getReportGpsCmd()
             .equals(other.getReportGpsCmd());
       }
+      result = result && (hasGetPcListResponse() == other.hasGetPcListResponse());
+      if (hasGetPcListResponse()) {
+        result = result && getGetPcListResponse()
+            .equals(other.getGetPcListResponse());
+      }
+      result = result && (hasGetModuleListResponse() == other.hasGetModuleListResponse());
+      if (hasGetModuleListResponse()) {
+        result = result && getGetModuleListResponse()
+            .equals(other.getGetModuleListResponse());
+      }
+      result = result && (hasSetPowerOnResponse() == other.hasSetPowerOnResponse());
+      if (hasSetPowerOnResponse()) {
+        result = result && getSetPowerOnResponse()
+            .equals(other.getSetPowerOnResponse());
+      }
+      result = result && (hasGetLocationResponse() == other.hasGetLocationResponse());
+      if (hasGetLocationResponse()) {
+        result = result && getGetLocationResponse()
+            .equals(other.getGetLocationResponse());
+      }
+      result = result && (hasGetFileListResponse() == other.hasGetFileListResponse());
+      if (hasGetFileListResponse()) {
+        result = result && getGetFileListResponse()
+            .equals(other.getGetFileListResponse());
+      }
+      result = result && (hasDeleteFileResponse() == other.hasDeleteFileResponse());
+      if (hasDeleteFileResponse()) {
+        result = result && getDeleteFileResponse()
+            .equals(other.getDeleteFileResponse());
+      }
+      result = result && (hasSetPowerOffResponse() == other.hasSetPowerOffResponse());
+      if (hasSetPowerOffResponse()) {
+        result = result && getSetPowerOffResponse()
+            .equals(other.getSetPowerOffResponse());
+      }
+      result = result && (hasGetPcListRequest() == other.hasGetPcListRequest());
+      if (hasGetPcListRequest()) {
+        result = result && getGetPcListRequest()
+            .equals(other.getGetPcListRequest());
+      }
+      result = result && (hasGetModuleListRequest() == other.hasGetModuleListRequest());
+      if (hasGetModuleListRequest()) {
+        result = result && getGetModuleListRequest()
+            .equals(other.getGetModuleListRequest());
+      }
+      result = result && (hasSetPowerOnRequest() == other.hasSetPowerOnRequest());
+      if (hasSetPowerOnRequest()) {
+        result = result && getSetPowerOnRequest()
+            .equals(other.getSetPowerOnRequest());
+      }
+      result = result && (hasGetLocationRequest() == other.hasGetLocationRequest());
+      if (hasGetLocationRequest()) {
+        result = result && getGetLocationRequest()
+            .equals(other.getGetLocationRequest());
+      }
+      result = result && (hasGetFileListRequest() == other.hasGetFileListRequest());
+      if (hasGetFileListRequest()) {
+        result = result && getGetFileListRequest()
+            .equals(other.getGetFileListRequest());
+      }
+      result = result && (hasDeleteFileRequest() == other.hasDeleteFileRequest());
+      if (hasDeleteFileRequest()) {
+        result = result && getDeleteFileRequest()
+            .equals(other.getDeleteFileRequest());
+      }
+      result = result && (hasSetPowerOffRequest() == other.hasSetPowerOffRequest());
+      if (hasSetPowerOffRequest()) {
+        result = result && getSetPowerOffRequest()
+            .equals(other.getSetPowerOffRequest());
+      }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -4670,6 +16677,62 @@ public final class MessageData {
       if (hasReportGpsCmd()) {
         hash = (37 * hash) + REPORT_GPS_CMD_FIELD_NUMBER;
         hash = (53 * hash) + getReportGpsCmd().hashCode();
+      }
+      if (hasGetPcListResponse()) {
+        hash = (37 * hash) + GET_PC_LIST_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getGetPcListResponse().hashCode();
+      }
+      if (hasGetModuleListResponse()) {
+        hash = (37 * hash) + GET_MODULE_LIST_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getGetModuleListResponse().hashCode();
+      }
+      if (hasSetPowerOnResponse()) {
+        hash = (37 * hash) + SET_POWER_ON_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getSetPowerOnResponse().hashCode();
+      }
+      if (hasGetLocationResponse()) {
+        hash = (37 * hash) + GET_LOCATION_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getGetLocationResponse().hashCode();
+      }
+      if (hasGetFileListResponse()) {
+        hash = (37 * hash) + GET_FILE_LIST_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getGetFileListResponse().hashCode();
+      }
+      if (hasDeleteFileResponse()) {
+        hash = (37 * hash) + DELETE_FILE_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getDeleteFileResponse().hashCode();
+      }
+      if (hasSetPowerOffResponse()) {
+        hash = (37 * hash) + SET_POWER_OFF_RESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getSetPowerOffResponse().hashCode();
+      }
+      if (hasGetPcListRequest()) {
+        hash = (37 * hash) + GET_PC_LIST_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getGetPcListRequest().hashCode();
+      }
+      if (hasGetModuleListRequest()) {
+        hash = (37 * hash) + GET_MODULE_LIST_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getGetModuleListRequest().hashCode();
+      }
+      if (hasSetPowerOnRequest()) {
+        hash = (37 * hash) + SET_POWER_ON_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getSetPowerOnRequest().hashCode();
+      }
+      if (hasGetLocationRequest()) {
+        hash = (37 * hash) + GET_LOCATION_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getGetLocationRequest().hashCode();
+      }
+      if (hasGetFileListRequest()) {
+        hash = (37 * hash) + GET_FILE_LIST_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getGetFileListRequest().hashCode();
+      }
+      if (hasDeleteFileRequest()) {
+        hash = (37 * hash) + DELETE_FILE_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getDeleteFileRequest().hashCode();
+      }
+      if (hasSetPowerOffRequest()) {
+        hash = (37 * hash) + SET_POWER_OFF_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getSetPowerOffRequest().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -4802,6 +16865,20 @@ public final class MessageData {
           getLoginResponseFieldBuilder();
           getPowerOnPcCmdFieldBuilder();
           getReportGpsCmdFieldBuilder();
+          getGetPcListResponseFieldBuilder();
+          getGetModuleListResponseFieldBuilder();
+          getSetPowerOnResponseFieldBuilder();
+          getGetLocationResponseFieldBuilder();
+          getGetFileListResponseFieldBuilder();
+          getDeleteFileResponseFieldBuilder();
+          getSetPowerOffResponseFieldBuilder();
+          getGetPcListRequestFieldBuilder();
+          getGetModuleListRequestFieldBuilder();
+          getSetPowerOnRequestFieldBuilder();
+          getGetLocationRequestFieldBuilder();
+          getGetFileListRequestFieldBuilder();
+          getDeleteFileRequestFieldBuilder();
+          getSetPowerOffRequestFieldBuilder();
         }
       }
       public Builder clear() {
@@ -4844,6 +16921,90 @@ public final class MessageData {
           reportGpsCmdBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000040);
+        if (getPcListResponseBuilder_ == null) {
+          getPcListResponse_ = null;
+        } else {
+          getPcListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        if (getModuleListResponseBuilder_ == null) {
+          getModuleListResponse_ = null;
+        } else {
+          getModuleListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000100);
+        if (setPowerOnResponseBuilder_ == null) {
+          setPowerOnResponse_ = null;
+        } else {
+          setPowerOnResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000200);
+        if (getLocationResponseBuilder_ == null) {
+          getLocationResponse_ = null;
+        } else {
+          getLocationResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        if (getFileListResponseBuilder_ == null) {
+          getFileListResponse_ = null;
+        } else {
+          getFileListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
+        if (deleteFileResponseBuilder_ == null) {
+          deleteFileResponse_ = null;
+        } else {
+          deleteFileResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
+        if (setPowerOffResponseBuilder_ == null) {
+          setPowerOffResponse_ = null;
+        } else {
+          setPowerOffResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00002000);
+        if (getPcListRequestBuilder_ == null) {
+          getPcListRequest_ = null;
+        } else {
+          getPcListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00004000);
+        if (getModuleListRequestBuilder_ == null) {
+          getModuleListRequest_ = null;
+        } else {
+          getModuleListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00008000);
+        if (setPowerOnRequestBuilder_ == null) {
+          setPowerOnRequest_ = null;
+        } else {
+          setPowerOnRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00010000);
+        if (getLocationRequestBuilder_ == null) {
+          getLocationRequest_ = null;
+        } else {
+          getLocationRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00020000);
+        if (getFileListRequestBuilder_ == null) {
+          getFileListRequest_ = null;
+        } else {
+          getFileListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00040000);
+        if (deleteFileRequestBuilder_ == null) {
+          deleteFileRequest_ = null;
+        } else {
+          deleteFileRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        if (setPowerOffRequestBuilder_ == null) {
+          setPowerOffRequest_ = null;
+        } else {
+          setPowerOffRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
         return this;
       }
 
@@ -4920,6 +17081,118 @@ public final class MessageData {
         } else {
           result.reportGpsCmd_ = reportGpsCmdBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        if (getPcListResponseBuilder_ == null) {
+          result.getPcListResponse_ = getPcListResponse_;
+        } else {
+          result.getPcListResponse_ = getPcListResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        if (getModuleListResponseBuilder_ == null) {
+          result.getModuleListResponse_ = getModuleListResponse_;
+        } else {
+          result.getModuleListResponse_ = getModuleListResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        if (setPowerOnResponseBuilder_ == null) {
+          result.setPowerOnResponse_ = setPowerOnResponse_;
+        } else {
+          result.setPowerOnResponse_ = setPowerOnResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        if (getLocationResponseBuilder_ == null) {
+          result.getLocationResponse_ = getLocationResponse_;
+        } else {
+          result.getLocationResponse_ = getLocationResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        if (getFileListResponseBuilder_ == null) {
+          result.getFileListResponse_ = getFileListResponse_;
+        } else {
+          result.getFileListResponse_ = getFileListResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        if (deleteFileResponseBuilder_ == null) {
+          result.deleteFileResponse_ = deleteFileResponse_;
+        } else {
+          result.deleteFileResponse_ = deleteFileResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        if (setPowerOffResponseBuilder_ == null) {
+          result.setPowerOffResponse_ = setPowerOffResponse_;
+        } else {
+          result.setPowerOffResponse_ = setPowerOffResponseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        if (getPcListRequestBuilder_ == null) {
+          result.getPcListRequest_ = getPcListRequest_;
+        } else {
+          result.getPcListRequest_ = getPcListRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        if (getModuleListRequestBuilder_ == null) {
+          result.getModuleListRequest_ = getModuleListRequest_;
+        } else {
+          result.getModuleListRequest_ = getModuleListRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        if (setPowerOnRequestBuilder_ == null) {
+          result.setPowerOnRequest_ = setPowerOnRequest_;
+        } else {
+          result.setPowerOnRequest_ = setPowerOnRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00020000;
+        }
+        if (getLocationRequestBuilder_ == null) {
+          result.getLocationRequest_ = getLocationRequest_;
+        } else {
+          result.getLocationRequest_ = getLocationRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00040000;
+        }
+        if (getFileListRequestBuilder_ == null) {
+          result.getFileListRequest_ = getFileListRequest_;
+        } else {
+          result.getFileListRequest_ = getFileListRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
+          to_bitField0_ |= 0x00080000;
+        }
+        if (deleteFileRequestBuilder_ == null) {
+          result.deleteFileRequest_ = deleteFileRequest_;
+        } else {
+          result.deleteFileRequest_ = deleteFileRequestBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
+          to_bitField0_ |= 0x00100000;
+        }
+        if (setPowerOffRequestBuilder_ == null) {
+          result.setPowerOffRequest_ = setPowerOffRequest_;
+        } else {
+          result.setPowerOffRequest_ = setPowerOffRequestBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -4983,6 +17256,48 @@ public final class MessageData {
         if (other.hasReportGpsCmd()) {
           mergeReportGpsCmd(other.getReportGpsCmd());
         }
+        if (other.hasGetPcListResponse()) {
+          mergeGetPcListResponse(other.getGetPcListResponse());
+        }
+        if (other.hasGetModuleListResponse()) {
+          mergeGetModuleListResponse(other.getGetModuleListResponse());
+        }
+        if (other.hasSetPowerOnResponse()) {
+          mergeSetPowerOnResponse(other.getSetPowerOnResponse());
+        }
+        if (other.hasGetLocationResponse()) {
+          mergeGetLocationResponse(other.getGetLocationResponse());
+        }
+        if (other.hasGetFileListResponse()) {
+          mergeGetFileListResponse(other.getGetFileListResponse());
+        }
+        if (other.hasDeleteFileResponse()) {
+          mergeDeleteFileResponse(other.getDeleteFileResponse());
+        }
+        if (other.hasSetPowerOffResponse()) {
+          mergeSetPowerOffResponse(other.getSetPowerOffResponse());
+        }
+        if (other.hasGetPcListRequest()) {
+          mergeGetPcListRequest(other.getGetPcListRequest());
+        }
+        if (other.hasGetModuleListRequest()) {
+          mergeGetModuleListRequest(other.getGetModuleListRequest());
+        }
+        if (other.hasSetPowerOnRequest()) {
+          mergeSetPowerOnRequest(other.getSetPowerOnRequest());
+        }
+        if (other.hasGetLocationRequest()) {
+          mergeGetLocationRequest(other.getGetLocationRequest());
+        }
+        if (other.hasGetFileListRequest()) {
+          mergeGetFileListRequest(other.getGetFileListRequest());
+        }
+        if (other.hasDeleteFileRequest()) {
+          mergeDeleteFileRequest(other.getDeleteFileRequest());
+        }
+        if (other.hasSetPowerOffRequest()) {
+          mergeSetPowerOffRequest(other.getSetPowerOffRequest());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -5009,6 +17324,66 @@ public final class MessageData {
         }
         if (hasLoginResponse()) {
           if (!getLoginResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasSetPowerOnResponse()) {
+          if (!getSetPowerOnResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetLocationResponse()) {
+          if (!getGetLocationResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetFileListResponse()) {
+          if (!getGetFileListResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasDeleteFileResponse()) {
+          if (!getDeleteFileResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasSetPowerOffResponse()) {
+          if (!getSetPowerOffResponse().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetPcListRequest()) {
+          if (!getGetPcListRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetModuleListRequest()) {
+          if (!getGetModuleListRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasSetPowerOnRequest()) {
+          if (!getSetPowerOnRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetLocationRequest()) {
+          if (!getGetLocationRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasGetFileListRequest()) {
+          if (!getGetFileListRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasDeleteFileRequest()) {
+          if (!getDeleteFileRequest().isInitialized()) {
+            return false;
+          }
+        }
+        if (hasSetPowerOffRequest()) {
+          if (!getSetPowerOffRequest().isInitialized()) {
             return false;
           }
         }
@@ -5075,7 +17450,7 @@ public final class MessageData {
           cn.ght.protocol.MessageData.LoginRequest, cn.ght.protocol.MessageData.LoginRequest.Builder, cn.ght.protocol.MessageData.LoginRequestOrBuilder> loginRequestBuilder_;
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5085,7 +17460,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5099,7 +17474,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5119,7 +17494,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5137,7 +17512,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5161,7 +17536,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5178,7 +17553,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5190,7 +17565,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5205,7 +17580,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *M
+       *Module
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginRequest login_request = 2;</code>
@@ -5465,7 +17840,7 @@ public final class MessageData {
           cn.ght.protocol.MessageData.LoginResponse, cn.ght.protocol.MessageData.LoginResponse.Builder, cn.ght.protocol.MessageData.LoginResponseOrBuilder> loginResponseBuilder_;
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5475,7 +17850,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5489,7 +17864,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5509,7 +17884,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5527,7 +17902,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5551,7 +17926,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5568,7 +17943,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5580,7 +17955,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5595,7 +17970,7 @@ public final class MessageData {
       }
       /**
        * <pre>
-       *S
+       *Server
        * </pre>
        *
        * <code>optional .cn.ght.protocol.LoginResponse login_response = 5;</code>
@@ -5849,6 +18224,1694 @@ public final class MessageData {
         }
         return reportGpsCmdBuilder_;
       }
+
+      private cn.ght.protocol.MessageData.GetPCListResponse getPcListResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetPCListResponse, cn.ght.protocol.MessageData.GetPCListResponse.Builder, cn.ght.protocol.MessageData.GetPCListResponseOrBuilder> getPcListResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public boolean hasGetPcListResponse() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListResponse getGetPcListResponse() {
+        if (getPcListResponseBuilder_ == null) {
+          return getPcListResponse_ == null ? cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance() : getPcListResponse_;
+        } else {
+          return getPcListResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public Builder setGetPcListResponse(cn.ght.protocol.MessageData.GetPCListResponse value) {
+        if (getPcListResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getPcListResponse_ = value;
+          onChanged();
+        } else {
+          getPcListResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public Builder setGetPcListResponse(
+          cn.ght.protocol.MessageData.GetPCListResponse.Builder builderForValue) {
+        if (getPcListResponseBuilder_ == null) {
+          getPcListResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          getPcListResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public Builder mergeGetPcListResponse(cn.ght.protocol.MessageData.GetPCListResponse value) {
+        if (getPcListResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080) &&
+              getPcListResponse_ != null &&
+              getPcListResponse_ != cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance()) {
+            getPcListResponse_ =
+              cn.ght.protocol.MessageData.GetPCListResponse.newBuilder(getPcListResponse_).mergeFrom(value).buildPartial();
+          } else {
+            getPcListResponse_ = value;
+          }
+          onChanged();
+        } else {
+          getPcListResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000080;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public Builder clearGetPcListResponse() {
+        if (getPcListResponseBuilder_ == null) {
+          getPcListResponse_ = null;
+          onChanged();
+        } else {
+          getPcListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000080);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListResponse.Builder getGetPcListResponseBuilder() {
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return getGetPcListResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListResponseOrBuilder getGetPcListResponseOrBuilder() {
+        if (getPcListResponseBuilder_ != null) {
+          return getPcListResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return getPcListResponse_ == null ?
+              cn.ght.protocol.MessageData.GetPCListResponse.getDefaultInstance() : getPcListResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetPCListResponse get_pc_list_response = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetPCListResponse, cn.ght.protocol.MessageData.GetPCListResponse.Builder, cn.ght.protocol.MessageData.GetPCListResponseOrBuilder> 
+          getGetPcListResponseFieldBuilder() {
+        if (getPcListResponseBuilder_ == null) {
+          getPcListResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetPCListResponse, cn.ght.protocol.MessageData.GetPCListResponse.Builder, cn.ght.protocol.MessageData.GetPCListResponseOrBuilder>(
+                  getGetPcListResponse(),
+                  getParentForChildren(),
+                  isClean());
+          getPcListResponse_ = null;
+        }
+        return getPcListResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetModuleListResponse getModuleListResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetModuleListResponse, cn.ght.protocol.MessageData.GetModuleListResponse.Builder, cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder> getModuleListResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public boolean hasGetModuleListResponse() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListResponse getGetModuleListResponse() {
+        if (getModuleListResponseBuilder_ == null) {
+          return getModuleListResponse_ == null ? cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance() : getModuleListResponse_;
+        } else {
+          return getModuleListResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public Builder setGetModuleListResponse(cn.ght.protocol.MessageData.GetModuleListResponse value) {
+        if (getModuleListResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getModuleListResponse_ = value;
+          onChanged();
+        } else {
+          getModuleListResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public Builder setGetModuleListResponse(
+          cn.ght.protocol.MessageData.GetModuleListResponse.Builder builderForValue) {
+        if (getModuleListResponseBuilder_ == null) {
+          getModuleListResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          getModuleListResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public Builder mergeGetModuleListResponse(cn.ght.protocol.MessageData.GetModuleListResponse value) {
+        if (getModuleListResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) == 0x00000100) &&
+              getModuleListResponse_ != null &&
+              getModuleListResponse_ != cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance()) {
+            getModuleListResponse_ =
+              cn.ght.protocol.MessageData.GetModuleListResponse.newBuilder(getModuleListResponse_).mergeFrom(value).buildPartial();
+          } else {
+            getModuleListResponse_ = value;
+          }
+          onChanged();
+        } else {
+          getModuleListResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000100;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public Builder clearGetModuleListResponse() {
+        if (getModuleListResponseBuilder_ == null) {
+          getModuleListResponse_ = null;
+          onChanged();
+        } else {
+          getModuleListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000100);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListResponse.Builder getGetModuleListResponseBuilder() {
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return getGetModuleListResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder getGetModuleListResponseOrBuilder() {
+        if (getModuleListResponseBuilder_ != null) {
+          return getModuleListResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return getModuleListResponse_ == null ?
+              cn.ght.protocol.MessageData.GetModuleListResponse.getDefaultInstance() : getModuleListResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListResponse get_module_list_response = 16;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetModuleListResponse, cn.ght.protocol.MessageData.GetModuleListResponse.Builder, cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder> 
+          getGetModuleListResponseFieldBuilder() {
+        if (getModuleListResponseBuilder_ == null) {
+          getModuleListResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetModuleListResponse, cn.ght.protocol.MessageData.GetModuleListResponse.Builder, cn.ght.protocol.MessageData.GetModuleListResponseOrBuilder>(
+                  getGetModuleListResponse(),
+                  getParentForChildren(),
+                  isClean());
+          getModuleListResponse_ = null;
+        }
+        return getModuleListResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.SetPowerOnResponse setPowerOnResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOnResponse, cn.ght.protocol.MessageData.SetPowerOnResponse.Builder, cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder> setPowerOnResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public boolean hasSetPowerOnResponse() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnResponse getSetPowerOnResponse() {
+        if (setPowerOnResponseBuilder_ == null) {
+          return setPowerOnResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance() : setPowerOnResponse_;
+        } else {
+          return setPowerOnResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public Builder setSetPowerOnResponse(cn.ght.protocol.MessageData.SetPowerOnResponse value) {
+        if (setPowerOnResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          setPowerOnResponse_ = value;
+          onChanged();
+        } else {
+          setPowerOnResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public Builder setSetPowerOnResponse(
+          cn.ght.protocol.MessageData.SetPowerOnResponse.Builder builderForValue) {
+        if (setPowerOnResponseBuilder_ == null) {
+          setPowerOnResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          setPowerOnResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public Builder mergeSetPowerOnResponse(cn.ght.protocol.MessageData.SetPowerOnResponse value) {
+        if (setPowerOnResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000200) == 0x00000200) &&
+              setPowerOnResponse_ != null &&
+              setPowerOnResponse_ != cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance()) {
+            setPowerOnResponse_ =
+              cn.ght.protocol.MessageData.SetPowerOnResponse.newBuilder(setPowerOnResponse_).mergeFrom(value).buildPartial();
+          } else {
+            setPowerOnResponse_ = value;
+          }
+          onChanged();
+        } else {
+          setPowerOnResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000200;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public Builder clearSetPowerOnResponse() {
+        if (setPowerOnResponseBuilder_ == null) {
+          setPowerOnResponse_ = null;
+          onChanged();
+        } else {
+          setPowerOnResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000200);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnResponse.Builder getSetPowerOnResponseBuilder() {
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return getSetPowerOnResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder getSetPowerOnResponseOrBuilder() {
+        if (setPowerOnResponseBuilder_ != null) {
+          return setPowerOnResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return setPowerOnResponse_ == null ?
+              cn.ght.protocol.MessageData.SetPowerOnResponse.getDefaultInstance() : setPowerOnResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnResponse set_power_on_response = 17;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOnResponse, cn.ght.protocol.MessageData.SetPowerOnResponse.Builder, cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder> 
+          getSetPowerOnResponseFieldBuilder() {
+        if (setPowerOnResponseBuilder_ == null) {
+          setPowerOnResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.SetPowerOnResponse, cn.ght.protocol.MessageData.SetPowerOnResponse.Builder, cn.ght.protocol.MessageData.SetPowerOnResponseOrBuilder>(
+                  getSetPowerOnResponse(),
+                  getParentForChildren(),
+                  isClean());
+          setPowerOnResponse_ = null;
+        }
+        return setPowerOnResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetLocationResponse getLocationResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetLocationResponse, cn.ght.protocol.MessageData.GetLocationResponse.Builder, cn.ght.protocol.MessageData.GetLocationResponseOrBuilder> getLocationResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public boolean hasGetLocationResponse() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationResponse getGetLocationResponse() {
+        if (getLocationResponseBuilder_ == null) {
+          return getLocationResponse_ == null ? cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance() : getLocationResponse_;
+        } else {
+          return getLocationResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public Builder setGetLocationResponse(cn.ght.protocol.MessageData.GetLocationResponse value) {
+        if (getLocationResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getLocationResponse_ = value;
+          onChanged();
+        } else {
+          getLocationResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public Builder setGetLocationResponse(
+          cn.ght.protocol.MessageData.GetLocationResponse.Builder builderForValue) {
+        if (getLocationResponseBuilder_ == null) {
+          getLocationResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          getLocationResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public Builder mergeGetLocationResponse(cn.ght.protocol.MessageData.GetLocationResponse value) {
+        if (getLocationResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000400) == 0x00000400) &&
+              getLocationResponse_ != null &&
+              getLocationResponse_ != cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance()) {
+            getLocationResponse_ =
+              cn.ght.protocol.MessageData.GetLocationResponse.newBuilder(getLocationResponse_).mergeFrom(value).buildPartial();
+          } else {
+            getLocationResponse_ = value;
+          }
+          onChanged();
+        } else {
+          getLocationResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000400;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public Builder clearGetLocationResponse() {
+        if (getLocationResponseBuilder_ == null) {
+          getLocationResponse_ = null;
+          onChanged();
+        } else {
+          getLocationResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000400);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationResponse.Builder getGetLocationResponseBuilder() {
+        bitField0_ |= 0x00000400;
+        onChanged();
+        return getGetLocationResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationResponseOrBuilder getGetLocationResponseOrBuilder() {
+        if (getLocationResponseBuilder_ != null) {
+          return getLocationResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return getLocationResponse_ == null ?
+              cn.ght.protocol.MessageData.GetLocationResponse.getDefaultInstance() : getLocationResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationResponse get_location_response = 18;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetLocationResponse, cn.ght.protocol.MessageData.GetLocationResponse.Builder, cn.ght.protocol.MessageData.GetLocationResponseOrBuilder> 
+          getGetLocationResponseFieldBuilder() {
+        if (getLocationResponseBuilder_ == null) {
+          getLocationResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetLocationResponse, cn.ght.protocol.MessageData.GetLocationResponse.Builder, cn.ght.protocol.MessageData.GetLocationResponseOrBuilder>(
+                  getGetLocationResponse(),
+                  getParentForChildren(),
+                  isClean());
+          getLocationResponse_ = null;
+        }
+        return getLocationResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetFileListResponse getFileListResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetFileListResponse, cn.ght.protocol.MessageData.GetFileListResponse.Builder, cn.ght.protocol.MessageData.GetFileListResponseOrBuilder> getFileListResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public boolean hasGetFileListResponse() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListResponse getGetFileListResponse() {
+        if (getFileListResponseBuilder_ == null) {
+          return getFileListResponse_ == null ? cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance() : getFileListResponse_;
+        } else {
+          return getFileListResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public Builder setGetFileListResponse(cn.ght.protocol.MessageData.GetFileListResponse value) {
+        if (getFileListResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getFileListResponse_ = value;
+          onChanged();
+        } else {
+          getFileListResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public Builder setGetFileListResponse(
+          cn.ght.protocol.MessageData.GetFileListResponse.Builder builderForValue) {
+        if (getFileListResponseBuilder_ == null) {
+          getFileListResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          getFileListResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public Builder mergeGetFileListResponse(cn.ght.protocol.MessageData.GetFileListResponse value) {
+        if (getFileListResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00000800) == 0x00000800) &&
+              getFileListResponse_ != null &&
+              getFileListResponse_ != cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance()) {
+            getFileListResponse_ =
+              cn.ght.protocol.MessageData.GetFileListResponse.newBuilder(getFileListResponse_).mergeFrom(value).buildPartial();
+          } else {
+            getFileListResponse_ = value;
+          }
+          onChanged();
+        } else {
+          getFileListResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000800;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public Builder clearGetFileListResponse() {
+        if (getFileListResponseBuilder_ == null) {
+          getFileListResponse_ = null;
+          onChanged();
+        } else {
+          getFileListResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000800);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListResponse.Builder getGetFileListResponseBuilder() {
+        bitField0_ |= 0x00000800;
+        onChanged();
+        return getGetFileListResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListResponseOrBuilder getGetFileListResponseOrBuilder() {
+        if (getFileListResponseBuilder_ != null) {
+          return getFileListResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return getFileListResponse_ == null ?
+              cn.ght.protocol.MessageData.GetFileListResponse.getDefaultInstance() : getFileListResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListResponse get_file_list_response = 19;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetFileListResponse, cn.ght.protocol.MessageData.GetFileListResponse.Builder, cn.ght.protocol.MessageData.GetFileListResponseOrBuilder> 
+          getGetFileListResponseFieldBuilder() {
+        if (getFileListResponseBuilder_ == null) {
+          getFileListResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetFileListResponse, cn.ght.protocol.MessageData.GetFileListResponse.Builder, cn.ght.protocol.MessageData.GetFileListResponseOrBuilder>(
+                  getGetFileListResponse(),
+                  getParentForChildren(),
+                  isClean());
+          getFileListResponse_ = null;
+        }
+        return getFileListResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.DeleteFileResponse deleteFileResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.DeleteFileResponse, cn.ght.protocol.MessageData.DeleteFileResponse.Builder, cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder> deleteFileResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public boolean hasDeleteFileResponse() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileResponse getDeleteFileResponse() {
+        if (deleteFileResponseBuilder_ == null) {
+          return deleteFileResponse_ == null ? cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance() : deleteFileResponse_;
+        } else {
+          return deleteFileResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public Builder setDeleteFileResponse(cn.ght.protocol.MessageData.DeleteFileResponse value) {
+        if (deleteFileResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          deleteFileResponse_ = value;
+          onChanged();
+        } else {
+          deleteFileResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public Builder setDeleteFileResponse(
+          cn.ght.protocol.MessageData.DeleteFileResponse.Builder builderForValue) {
+        if (deleteFileResponseBuilder_ == null) {
+          deleteFileResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          deleteFileResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public Builder mergeDeleteFileResponse(cn.ght.protocol.MessageData.DeleteFileResponse value) {
+        if (deleteFileResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00001000) == 0x00001000) &&
+              deleteFileResponse_ != null &&
+              deleteFileResponse_ != cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance()) {
+            deleteFileResponse_ =
+              cn.ght.protocol.MessageData.DeleteFileResponse.newBuilder(deleteFileResponse_).mergeFrom(value).buildPartial();
+          } else {
+            deleteFileResponse_ = value;
+          }
+          onChanged();
+        } else {
+          deleteFileResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public Builder clearDeleteFileResponse() {
+        if (deleteFileResponseBuilder_ == null) {
+          deleteFileResponse_ = null;
+          onChanged();
+        } else {
+          deleteFileResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileResponse.Builder getDeleteFileResponseBuilder() {
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return getDeleteFileResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder getDeleteFileResponseOrBuilder() {
+        if (deleteFileResponseBuilder_ != null) {
+          return deleteFileResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return deleteFileResponse_ == null ?
+              cn.ght.protocol.MessageData.DeleteFileResponse.getDefaultInstance() : deleteFileResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileResponse delete_file_response = 20;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.DeleteFileResponse, cn.ght.protocol.MessageData.DeleteFileResponse.Builder, cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder> 
+          getDeleteFileResponseFieldBuilder() {
+        if (deleteFileResponseBuilder_ == null) {
+          deleteFileResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.DeleteFileResponse, cn.ght.protocol.MessageData.DeleteFileResponse.Builder, cn.ght.protocol.MessageData.DeleteFileResponseOrBuilder>(
+                  getDeleteFileResponse(),
+                  getParentForChildren(),
+                  isClean());
+          deleteFileResponse_ = null;
+        }
+        return deleteFileResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.SetPowerOffResponse setPowerOffResponse_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOffResponse, cn.ght.protocol.MessageData.SetPowerOffResponse.Builder, cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder> setPowerOffResponseBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public boolean hasSetPowerOffResponse() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffResponse getSetPowerOffResponse() {
+        if (setPowerOffResponseBuilder_ == null) {
+          return setPowerOffResponse_ == null ? cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance() : setPowerOffResponse_;
+        } else {
+          return setPowerOffResponseBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public Builder setSetPowerOffResponse(cn.ght.protocol.MessageData.SetPowerOffResponse value) {
+        if (setPowerOffResponseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          setPowerOffResponse_ = value;
+          onChanged();
+        } else {
+          setPowerOffResponseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00002000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public Builder setSetPowerOffResponse(
+          cn.ght.protocol.MessageData.SetPowerOffResponse.Builder builderForValue) {
+        if (setPowerOffResponseBuilder_ == null) {
+          setPowerOffResponse_ = builderForValue.build();
+          onChanged();
+        } else {
+          setPowerOffResponseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00002000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public Builder mergeSetPowerOffResponse(cn.ght.protocol.MessageData.SetPowerOffResponse value) {
+        if (setPowerOffResponseBuilder_ == null) {
+          if (((bitField0_ & 0x00002000) == 0x00002000) &&
+              setPowerOffResponse_ != null &&
+              setPowerOffResponse_ != cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance()) {
+            setPowerOffResponse_ =
+              cn.ght.protocol.MessageData.SetPowerOffResponse.newBuilder(setPowerOffResponse_).mergeFrom(value).buildPartial();
+          } else {
+            setPowerOffResponse_ = value;
+          }
+          onChanged();
+        } else {
+          setPowerOffResponseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00002000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public Builder clearSetPowerOffResponse() {
+        if (setPowerOffResponseBuilder_ == null) {
+          setPowerOffResponse_ = null;
+          onChanged();
+        } else {
+          setPowerOffResponseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00002000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffResponse.Builder getSetPowerOffResponseBuilder() {
+        bitField0_ |= 0x00002000;
+        onChanged();
+        return getSetPowerOffResponseFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder getSetPowerOffResponseOrBuilder() {
+        if (setPowerOffResponseBuilder_ != null) {
+          return setPowerOffResponseBuilder_.getMessageOrBuilder();
+        } else {
+          return setPowerOffResponse_ == null ?
+              cn.ght.protocol.MessageData.SetPowerOffResponse.getDefaultInstance() : setPowerOffResponse_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffResponse set_power_off_response = 21;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOffResponse, cn.ght.protocol.MessageData.SetPowerOffResponse.Builder, cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder> 
+          getSetPowerOffResponseFieldBuilder() {
+        if (setPowerOffResponseBuilder_ == null) {
+          setPowerOffResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.SetPowerOffResponse, cn.ght.protocol.MessageData.SetPowerOffResponse.Builder, cn.ght.protocol.MessageData.SetPowerOffResponseOrBuilder>(
+                  getSetPowerOffResponse(),
+                  getParentForChildren(),
+                  isClean());
+          setPowerOffResponse_ = null;
+        }
+        return setPowerOffResponseBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetPCListRequest getPcListRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetPCListRequest, cn.ght.protocol.MessageData.GetPCListRequest.Builder, cn.ght.protocol.MessageData.GetPCListRequestOrBuilder> getPcListRequestBuilder_;
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public boolean hasGetPcListRequest() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListRequest getGetPcListRequest() {
+        if (getPcListRequestBuilder_ == null) {
+          return getPcListRequest_ == null ? cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance() : getPcListRequest_;
+        } else {
+          return getPcListRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public Builder setGetPcListRequest(cn.ght.protocol.MessageData.GetPCListRequest value) {
+        if (getPcListRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getPcListRequest_ = value;
+          onChanged();
+        } else {
+          getPcListRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00004000;
+        return this;
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public Builder setGetPcListRequest(
+          cn.ght.protocol.MessageData.GetPCListRequest.Builder builderForValue) {
+        if (getPcListRequestBuilder_ == null) {
+          getPcListRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          getPcListRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00004000;
+        return this;
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public Builder mergeGetPcListRequest(cn.ght.protocol.MessageData.GetPCListRequest value) {
+        if (getPcListRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00004000) == 0x00004000) &&
+              getPcListRequest_ != null &&
+              getPcListRequest_ != cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance()) {
+            getPcListRequest_ =
+              cn.ght.protocol.MessageData.GetPCListRequest.newBuilder(getPcListRequest_).mergeFrom(value).buildPartial();
+          } else {
+            getPcListRequest_ = value;
+          }
+          onChanged();
+        } else {
+          getPcListRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00004000;
+        return this;
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public Builder clearGetPcListRequest() {
+        if (getPcListRequestBuilder_ == null) {
+          getPcListRequest_ = null;
+          onChanged();
+        } else {
+          getPcListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00004000);
+        return this;
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListRequest.Builder getGetPcListRequestBuilder() {
+        bitField0_ |= 0x00004000;
+        onChanged();
+        return getGetPcListRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      public cn.ght.protocol.MessageData.GetPCListRequestOrBuilder getGetPcListRequestOrBuilder() {
+        if (getPcListRequestBuilder_ != null) {
+          return getPcListRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return getPcListRequest_ == null ?
+              cn.ght.protocol.MessageData.GetPCListRequest.getDefaultInstance() : getPcListRequest_;
+        }
+      }
+      /**
+       * <pre>
+       *Mobile
+       * </pre>
+       *
+       * <code>optional .cn.ght.protocol.GetPCListRequest get_pc_list_request = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetPCListRequest, cn.ght.protocol.MessageData.GetPCListRequest.Builder, cn.ght.protocol.MessageData.GetPCListRequestOrBuilder> 
+          getGetPcListRequestFieldBuilder() {
+        if (getPcListRequestBuilder_ == null) {
+          getPcListRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetPCListRequest, cn.ght.protocol.MessageData.GetPCListRequest.Builder, cn.ght.protocol.MessageData.GetPCListRequestOrBuilder>(
+                  getGetPcListRequest(),
+                  getParentForChildren(),
+                  isClean());
+          getPcListRequest_ = null;
+        }
+        return getPcListRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetModuleListRequest getModuleListRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetModuleListRequest, cn.ght.protocol.MessageData.GetModuleListRequest.Builder, cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder> getModuleListRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public boolean hasGetModuleListRequest() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListRequest getGetModuleListRequest() {
+        if (getModuleListRequestBuilder_ == null) {
+          return getModuleListRequest_ == null ? cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance() : getModuleListRequest_;
+        } else {
+          return getModuleListRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public Builder setGetModuleListRequest(cn.ght.protocol.MessageData.GetModuleListRequest value) {
+        if (getModuleListRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getModuleListRequest_ = value;
+          onChanged();
+        } else {
+          getModuleListRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00008000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public Builder setGetModuleListRequest(
+          cn.ght.protocol.MessageData.GetModuleListRequest.Builder builderForValue) {
+        if (getModuleListRequestBuilder_ == null) {
+          getModuleListRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          getModuleListRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00008000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public Builder mergeGetModuleListRequest(cn.ght.protocol.MessageData.GetModuleListRequest value) {
+        if (getModuleListRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00008000) == 0x00008000) &&
+              getModuleListRequest_ != null &&
+              getModuleListRequest_ != cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance()) {
+            getModuleListRequest_ =
+              cn.ght.protocol.MessageData.GetModuleListRequest.newBuilder(getModuleListRequest_).mergeFrom(value).buildPartial();
+          } else {
+            getModuleListRequest_ = value;
+          }
+          onChanged();
+        } else {
+          getModuleListRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00008000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public Builder clearGetModuleListRequest() {
+        if (getModuleListRequestBuilder_ == null) {
+          getModuleListRequest_ = null;
+          onChanged();
+        } else {
+          getModuleListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00008000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListRequest.Builder getGetModuleListRequestBuilder() {
+        bitField0_ |= 0x00008000;
+        onChanged();
+        return getGetModuleListRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      public cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder getGetModuleListRequestOrBuilder() {
+        if (getModuleListRequestBuilder_ != null) {
+          return getModuleListRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return getModuleListRequest_ == null ?
+              cn.ght.protocol.MessageData.GetModuleListRequest.getDefaultInstance() : getModuleListRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetModuleListRequest get_module_list_request = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetModuleListRequest, cn.ght.protocol.MessageData.GetModuleListRequest.Builder, cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder> 
+          getGetModuleListRequestFieldBuilder() {
+        if (getModuleListRequestBuilder_ == null) {
+          getModuleListRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetModuleListRequest, cn.ght.protocol.MessageData.GetModuleListRequest.Builder, cn.ght.protocol.MessageData.GetModuleListRequestOrBuilder>(
+                  getGetModuleListRequest(),
+                  getParentForChildren(),
+                  isClean());
+          getModuleListRequest_ = null;
+        }
+        return getModuleListRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.SetPowerOnRequest setPowerOnRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOnRequest, cn.ght.protocol.MessageData.SetPowerOnRequest.Builder, cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder> setPowerOnRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public boolean hasSetPowerOnRequest() {
+        return ((bitField0_ & 0x00010000) == 0x00010000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnRequest getSetPowerOnRequest() {
+        if (setPowerOnRequestBuilder_ == null) {
+          return setPowerOnRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance() : setPowerOnRequest_;
+        } else {
+          return setPowerOnRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public Builder setSetPowerOnRequest(cn.ght.protocol.MessageData.SetPowerOnRequest value) {
+        if (setPowerOnRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          setPowerOnRequest_ = value;
+          onChanged();
+        } else {
+          setPowerOnRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public Builder setSetPowerOnRequest(
+          cn.ght.protocol.MessageData.SetPowerOnRequest.Builder builderForValue) {
+        if (setPowerOnRequestBuilder_ == null) {
+          setPowerOnRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          setPowerOnRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public Builder mergeSetPowerOnRequest(cn.ght.protocol.MessageData.SetPowerOnRequest value) {
+        if (setPowerOnRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00010000) == 0x00010000) &&
+              setPowerOnRequest_ != null &&
+              setPowerOnRequest_ != cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance()) {
+            setPowerOnRequest_ =
+              cn.ght.protocol.MessageData.SetPowerOnRequest.newBuilder(setPowerOnRequest_).mergeFrom(value).buildPartial();
+          } else {
+            setPowerOnRequest_ = value;
+          }
+          onChanged();
+        } else {
+          setPowerOnRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00010000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public Builder clearSetPowerOnRequest() {
+        if (setPowerOnRequestBuilder_ == null) {
+          setPowerOnRequest_ = null;
+          onChanged();
+        } else {
+          setPowerOnRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00010000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnRequest.Builder getSetPowerOnRequestBuilder() {
+        bitField0_ |= 0x00010000;
+        onChanged();
+        return getSetPowerOnRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder getSetPowerOnRequestOrBuilder() {
+        if (setPowerOnRequestBuilder_ != null) {
+          return setPowerOnRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return setPowerOnRequest_ == null ?
+              cn.ght.protocol.MessageData.SetPowerOnRequest.getDefaultInstance() : setPowerOnRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOnRequest set_power_on_request = 10;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOnRequest, cn.ght.protocol.MessageData.SetPowerOnRequest.Builder, cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder> 
+          getSetPowerOnRequestFieldBuilder() {
+        if (setPowerOnRequestBuilder_ == null) {
+          setPowerOnRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.SetPowerOnRequest, cn.ght.protocol.MessageData.SetPowerOnRequest.Builder, cn.ght.protocol.MessageData.SetPowerOnRequestOrBuilder>(
+                  getSetPowerOnRequest(),
+                  getParentForChildren(),
+                  isClean());
+          setPowerOnRequest_ = null;
+        }
+        return setPowerOnRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetLocationRequest getLocationRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetLocationRequest, cn.ght.protocol.MessageData.GetLocationRequest.Builder, cn.ght.protocol.MessageData.GetLocationRequestOrBuilder> getLocationRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public boolean hasGetLocationRequest() {
+        return ((bitField0_ & 0x00020000) == 0x00020000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationRequest getGetLocationRequest() {
+        if (getLocationRequestBuilder_ == null) {
+          return getLocationRequest_ == null ? cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance() : getLocationRequest_;
+        } else {
+          return getLocationRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public Builder setGetLocationRequest(cn.ght.protocol.MessageData.GetLocationRequest value) {
+        if (getLocationRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getLocationRequest_ = value;
+          onChanged();
+        } else {
+          getLocationRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public Builder setGetLocationRequest(
+          cn.ght.protocol.MessageData.GetLocationRequest.Builder builderForValue) {
+        if (getLocationRequestBuilder_ == null) {
+          getLocationRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          getLocationRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public Builder mergeGetLocationRequest(cn.ght.protocol.MessageData.GetLocationRequest value) {
+        if (getLocationRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00020000) == 0x00020000) &&
+              getLocationRequest_ != null &&
+              getLocationRequest_ != cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance()) {
+            getLocationRequest_ =
+              cn.ght.protocol.MessageData.GetLocationRequest.newBuilder(getLocationRequest_).mergeFrom(value).buildPartial();
+          } else {
+            getLocationRequest_ = value;
+          }
+          onChanged();
+        } else {
+          getLocationRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00020000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public Builder clearGetLocationRequest() {
+        if (getLocationRequestBuilder_ == null) {
+          getLocationRequest_ = null;
+          onChanged();
+        } else {
+          getLocationRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00020000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationRequest.Builder getGetLocationRequestBuilder() {
+        bitField0_ |= 0x00020000;
+        onChanged();
+        return getGetLocationRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      public cn.ght.protocol.MessageData.GetLocationRequestOrBuilder getGetLocationRequestOrBuilder() {
+        if (getLocationRequestBuilder_ != null) {
+          return getLocationRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return getLocationRequest_ == null ?
+              cn.ght.protocol.MessageData.GetLocationRequest.getDefaultInstance() : getLocationRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetLocationRequest get_location_request = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetLocationRequest, cn.ght.protocol.MessageData.GetLocationRequest.Builder, cn.ght.protocol.MessageData.GetLocationRequestOrBuilder> 
+          getGetLocationRequestFieldBuilder() {
+        if (getLocationRequestBuilder_ == null) {
+          getLocationRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetLocationRequest, cn.ght.protocol.MessageData.GetLocationRequest.Builder, cn.ght.protocol.MessageData.GetLocationRequestOrBuilder>(
+                  getGetLocationRequest(),
+                  getParentForChildren(),
+                  isClean());
+          getLocationRequest_ = null;
+        }
+        return getLocationRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.GetFileListRequest getFileListRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetFileListRequest, cn.ght.protocol.MessageData.GetFileListRequest.Builder, cn.ght.protocol.MessageData.GetFileListRequestOrBuilder> getFileListRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public boolean hasGetFileListRequest() {
+        return ((bitField0_ & 0x00040000) == 0x00040000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListRequest getGetFileListRequest() {
+        if (getFileListRequestBuilder_ == null) {
+          return getFileListRequest_ == null ? cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance() : getFileListRequest_;
+        } else {
+          return getFileListRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public Builder setGetFileListRequest(cn.ght.protocol.MessageData.GetFileListRequest value) {
+        if (getFileListRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          getFileListRequest_ = value;
+          onChanged();
+        } else {
+          getFileListRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public Builder setGetFileListRequest(
+          cn.ght.protocol.MessageData.GetFileListRequest.Builder builderForValue) {
+        if (getFileListRequestBuilder_ == null) {
+          getFileListRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          getFileListRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public Builder mergeGetFileListRequest(cn.ght.protocol.MessageData.GetFileListRequest value) {
+        if (getFileListRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00040000) == 0x00040000) &&
+              getFileListRequest_ != null &&
+              getFileListRequest_ != cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance()) {
+            getFileListRequest_ =
+              cn.ght.protocol.MessageData.GetFileListRequest.newBuilder(getFileListRequest_).mergeFrom(value).buildPartial();
+          } else {
+            getFileListRequest_ = value;
+          }
+          onChanged();
+        } else {
+          getFileListRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00040000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public Builder clearGetFileListRequest() {
+        if (getFileListRequestBuilder_ == null) {
+          getFileListRequest_ = null;
+          onChanged();
+        } else {
+          getFileListRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00040000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListRequest.Builder getGetFileListRequestBuilder() {
+        bitField0_ |= 0x00040000;
+        onChanged();
+        return getGetFileListRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      public cn.ght.protocol.MessageData.GetFileListRequestOrBuilder getGetFileListRequestOrBuilder() {
+        if (getFileListRequestBuilder_ != null) {
+          return getFileListRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return getFileListRequest_ == null ?
+              cn.ght.protocol.MessageData.GetFileListRequest.getDefaultInstance() : getFileListRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.GetFileListRequest get_file_list_request = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.GetFileListRequest, cn.ght.protocol.MessageData.GetFileListRequest.Builder, cn.ght.protocol.MessageData.GetFileListRequestOrBuilder> 
+          getGetFileListRequestFieldBuilder() {
+        if (getFileListRequestBuilder_ == null) {
+          getFileListRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.GetFileListRequest, cn.ght.protocol.MessageData.GetFileListRequest.Builder, cn.ght.protocol.MessageData.GetFileListRequestOrBuilder>(
+                  getGetFileListRequest(),
+                  getParentForChildren(),
+                  isClean());
+          getFileListRequest_ = null;
+        }
+        return getFileListRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.DeleteFileRequest deleteFileRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.DeleteFileRequest, cn.ght.protocol.MessageData.DeleteFileRequest.Builder, cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder> deleteFileRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public boolean hasDeleteFileRequest() {
+        return ((bitField0_ & 0x00080000) == 0x00080000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileRequest getDeleteFileRequest() {
+        if (deleteFileRequestBuilder_ == null) {
+          return deleteFileRequest_ == null ? cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance() : deleteFileRequest_;
+        } else {
+          return deleteFileRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public Builder setDeleteFileRequest(cn.ght.protocol.MessageData.DeleteFileRequest value) {
+        if (deleteFileRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          deleteFileRequest_ = value;
+          onChanged();
+        } else {
+          deleteFileRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public Builder setDeleteFileRequest(
+          cn.ght.protocol.MessageData.DeleteFileRequest.Builder builderForValue) {
+        if (deleteFileRequestBuilder_ == null) {
+          deleteFileRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          deleteFileRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public Builder mergeDeleteFileRequest(cn.ght.protocol.MessageData.DeleteFileRequest value) {
+        if (deleteFileRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00080000) == 0x00080000) &&
+              deleteFileRequest_ != null &&
+              deleteFileRequest_ != cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance()) {
+            deleteFileRequest_ =
+              cn.ght.protocol.MessageData.DeleteFileRequest.newBuilder(deleteFileRequest_).mergeFrom(value).buildPartial();
+          } else {
+            deleteFileRequest_ = value;
+          }
+          onChanged();
+        } else {
+          deleteFileRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public Builder clearDeleteFileRequest() {
+        if (deleteFileRequestBuilder_ == null) {
+          deleteFileRequest_ = null;
+          onChanged();
+        } else {
+          deleteFileRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileRequest.Builder getDeleteFileRequestBuilder() {
+        bitField0_ |= 0x00080000;
+        onChanged();
+        return getDeleteFileRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      public cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder getDeleteFileRequestOrBuilder() {
+        if (deleteFileRequestBuilder_ != null) {
+          return deleteFileRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return deleteFileRequest_ == null ?
+              cn.ght.protocol.MessageData.DeleteFileRequest.getDefaultInstance() : deleteFileRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.DeleteFileRequest delete_file_request = 13;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.DeleteFileRequest, cn.ght.protocol.MessageData.DeleteFileRequest.Builder, cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder> 
+          getDeleteFileRequestFieldBuilder() {
+        if (deleteFileRequestBuilder_ == null) {
+          deleteFileRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.DeleteFileRequest, cn.ght.protocol.MessageData.DeleteFileRequest.Builder, cn.ght.protocol.MessageData.DeleteFileRequestOrBuilder>(
+                  getDeleteFileRequest(),
+                  getParentForChildren(),
+                  isClean());
+          deleteFileRequest_ = null;
+        }
+        return deleteFileRequestBuilder_;
+      }
+
+      private cn.ght.protocol.MessageData.SetPowerOffRequest setPowerOffRequest_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOffRequest, cn.ght.protocol.MessageData.SetPowerOffRequest.Builder, cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder> setPowerOffRequestBuilder_;
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public boolean hasSetPowerOffRequest() {
+        return ((bitField0_ & 0x00100000) == 0x00100000);
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffRequest getSetPowerOffRequest() {
+        if (setPowerOffRequestBuilder_ == null) {
+          return setPowerOffRequest_ == null ? cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance() : setPowerOffRequest_;
+        } else {
+          return setPowerOffRequestBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public Builder setSetPowerOffRequest(cn.ght.protocol.MessageData.SetPowerOffRequest value) {
+        if (setPowerOffRequestBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          setPowerOffRequest_ = value;
+          onChanged();
+        } else {
+          setPowerOffRequestBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public Builder setSetPowerOffRequest(
+          cn.ght.protocol.MessageData.SetPowerOffRequest.Builder builderForValue) {
+        if (setPowerOffRequestBuilder_ == null) {
+          setPowerOffRequest_ = builderForValue.build();
+          onChanged();
+        } else {
+          setPowerOffRequestBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public Builder mergeSetPowerOffRequest(cn.ght.protocol.MessageData.SetPowerOffRequest value) {
+        if (setPowerOffRequestBuilder_ == null) {
+          if (((bitField0_ & 0x00100000) == 0x00100000) &&
+              setPowerOffRequest_ != null &&
+              setPowerOffRequest_ != cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance()) {
+            setPowerOffRequest_ =
+              cn.ght.protocol.MessageData.SetPowerOffRequest.newBuilder(setPowerOffRequest_).mergeFrom(value).buildPartial();
+          } else {
+            setPowerOffRequest_ = value;
+          }
+          onChanged();
+        } else {
+          setPowerOffRequestBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00100000;
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public Builder clearSetPowerOffRequest() {
+        if (setPowerOffRequestBuilder_ == null) {
+          setPowerOffRequest_ = null;
+          onChanged();
+        } else {
+          setPowerOffRequestBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00100000);
+        return this;
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffRequest.Builder getSetPowerOffRequestBuilder() {
+        bitField0_ |= 0x00100000;
+        onChanged();
+        return getSetPowerOffRequestFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      public cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder getSetPowerOffRequestOrBuilder() {
+        if (setPowerOffRequestBuilder_ != null) {
+          return setPowerOffRequestBuilder_.getMessageOrBuilder();
+        } else {
+          return setPowerOffRequest_ == null ?
+              cn.ght.protocol.MessageData.SetPowerOffRequest.getDefaultInstance() : setPowerOffRequest_;
+        }
+      }
+      /**
+       * <code>optional .cn.ght.protocol.SetPowerOffRequest set_power_off_request = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cn.ght.protocol.MessageData.SetPowerOffRequest, cn.ght.protocol.MessageData.SetPowerOffRequest.Builder, cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder> 
+          getSetPowerOffRequestFieldBuilder() {
+        if (setPowerOffRequestBuilder_ == null) {
+          setPowerOffRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cn.ght.protocol.MessageData.SetPowerOffRequest, cn.ght.protocol.MessageData.SetPowerOffRequest.Builder, cn.ght.protocol.MessageData.SetPowerOffRequestOrBuilder>(
+                  getSetPowerOffRequest(),
+                  getParentForChildren(),
+                  isClean());
+          setPowerOffRequest_ = null;
+        }
+        return setPowerOffRequestBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
@@ -5929,6 +19992,81 @@ public final class MessageData {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_cn_ght_protocol_ReportGPS_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetPCListRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetPCListRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetPCListResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetPCListResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetModuleListRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetModuleListRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetModuleListResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetModuleListResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_SetPowerOnRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_SetPowerOnResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetLocationRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetLocationRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetLocationResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetLocationResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetFileListRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetFileListRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_FileInfo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_FileInfo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_GetFileListResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_GetFileListResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_DeleteFileRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_DeleteFileRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_DeleteFileResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_DeleteFileResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_SetPowerOffRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cn_ght_protocol_SetPowerOffResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_cn_ght_protocol_Message_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -5950,32 +20088,84 @@ public final class MessageData {
       "evice_name\030\001 \002(\t\022\016\n\006result\030\002 \002(\007\"\020\n\016Repo" +
       "rtGPSQuery\"E\n\tReportGPS\022\023\n\013device_name\030\001" +
       " \002(\t\022\021\n\tlongitude\030\002 \002(\001\022\020\n\010latitude\030\003 \002(" +
-      "\001\"\363\002\n\007Message\022&\n\010msg_type\030\001 \002(\0162\024.cn.ght" +
-      ".protocol.MSG\0224\n\rlogin_request\030\002 \001(\0132\035.c" +
-      "n.ght.protocol.LoginRequest\022/\n\013power_on_" +
-      "pc\030\003 \001(\0132\032.cn.ght.protocol.PowerOnPC\022.\n\n" +
-      "report_gps\030\004 \001(\0132\032.cn.ght.protocol.Repor" +
-      "tGPS\0226\n\016login_response\030\005 \001(\0132\036.cn.ght.pr" +
-      "otocol.LoginResponse\0228\n\017power_on_pc_cmd\030" +
-      "\006 \001(\0132\037.cn.ght.protocol.PowerOnPCQuery\0227" +
-      "\n\016report_gps_cmd\030\007 \001(\0132\037.cn.ght.protocol" +
-      ".ReportGPSQuery*\261\004\n\003MSG\022\022\n\rLogin_Request" +
-      "\020\221N\022\023\n\016Login_Response\020\222N\022\027\n\021Power_On_PC_" +
-      "Query\020\241\234\001\022\021\n\013Power_On_PC\020\242\234\001\022\026\n\020Report_G" +
-      "PS_Query\020\243\234\001\022\020\n\nReport_GPS\020\244\234\001\022\023\n\rFileLi" +
-      "stQuery\020\261\352\001\022\016\n\010FileList\020\262\352\001\022\025\n\017DeleteFil" +
-      "eQuery\020\263\352\001\022\020\n\nDeleteFile\020\264\352\001\022\023\n\rPowerOff" +
-      "Query\020\321\206\003\022\016\n\010PowerOff\020\322\206\003\022\026\n\020GetPCListRe" +
-      "quest\020\301\270\002\022\027\n\021GetPCListResponse\020\302\270\002\022\032\n\024Ge" +
-      "tModuleListRequest\020\303\270\002\022\033\n\025GetModuleListR" +
-      "esponse\020\304\270\002\022\027\n\021SetPowerOnRequest\020\305\270\002\022\030\n\022" +
-      "SetPowerOnResponse\020\306\270\002\022\030\n\022GetFileListReq" +
-      "uest\020\307\270\002\022\031\n\023GetFileListResponse\020\310\270\002\022\027\n\021D" +
-      "eleteFileRequest\020\311\270\002\022\030\n\022DeleteFileRespon" +
-      "se\020\312\270\002\022\030\n\022GetLocationRequest\020\313\270\002\022\031\n\023GetL" +
-      "ocationResponse\020\314\270\002*J\n\006DEVICE\022\021\n\rDeviceA" +
-      "ndroid\020\001\022\r\n\tDeviceIOS\020\002\022\020\n\014DeviceModule\020" +
-      "\003\022\014\n\010DevicePC\020\004B\rB\013MessageData"
+      "\001\"\'\n\020GetPCListRequest\022\023\n\013device_name\030\001 \002" +
+      "(\t\"%\n\021GetPCListResponse\022\020\n\010pc_names\030\001 \003(" +
+      "\t\"+\n\024GetModuleListRequest\022\023\n\013device_name" +
+      "\030\001 \002(\t\"-\n\025GetModuleListResponse\022\024\n\014modul" +
+      "e_names\030\001 \003(\t\"=\n\021SetPowerOnRequest\022\023\n\013de" +
+      "vice_name\030\001 \002(\t\022\023\n\013module_name\030\002 \002(\t\"C\n\022" +
+      "SetPowerOnResponse\022\023\n\013module_name\030\001 \002(\t\022" +
+      "\030\n\020power_on_success\030\002 \002(\010\">\n\022GetLocation" +
+      "Request\022\023\n\013device_name\030\001 \002(\t\022\023\n\013module_n" +
+      "ame\030\002 \002(\t\"O\n\023GetLocationResponse\022\023\n\013modu" +
+      "le_name\030\001 \002(\t\022\021\n\tlongitude\030\002 \002(\001\022\020\n\010lati" +
+      "tude\030\003 \002(\001\"T\n\022GetFileListRequest\022\023\n\013devi" +
+      "ce_name\030\001 \002(\t\022\017\n\007pc_name\030\002 \002(\t\022\030\n\020parent" +
+      "_directory\030\003 \002(\t\"0\n\010FileInfo\022\021\n\tfile_nam" +
+      "e\030\001 \002(\t\022\021\n\tfile_type\030\002 \002(\005\"T\n\023GetFileLis" +
+      "tResponse\022\017\n\007pc_name\030\001 \002(\t\022,\n\tfile_info\030" +
+      "\002 \003(\0132\031.cn.ght.protocol.FileInfo\"g\n\021Dele" +
+      "teFileRequest\022\023\n\013device_name\030\001 \002(\t\022\017\n\007pc" +
+      "_name\030\002 \002(\t\022\026\n\016file_full_path\030\003 \002(\t\022\024\n\014i" +
+      "s_directory\030\004 \002(\010\"=\n\022DeleteFileResponse\022" +
+      "\017\n\007pc_name\030\001 \002(\t\022\026\n\016delete_success\030\002 \002(\010" +
+      "\"O\n\022SetPowerOffRequest\022\023\n\013device_name\030\001 " +
+      "\002(\t\022\023\n\013module_name\030\002 \001(\t\022\017\n\007pc_name\030\003 \001(" +
+      "\t\"V\n\023SetPowerOffResponse\022\023\n\013module_name\030" +
+      "\001 \001(\t\022\017\n\007pc_name\030\002 \001(\t\022\031\n\021power_off_succ" +
+      "ess\030\003 \002(\010\"\255\n\n\007Message\022&\n\010msg_type\030\001 \002(\0162" +
+      "\024.cn.ght.protocol.MSG\0224\n\rlogin_request\030\002" +
+      " \001(\0132\035.cn.ght.protocol.LoginRequest\022/\n\013p" +
+      "ower_on_pc\030\003 \001(\0132\032.cn.ght.protocol.Power" +
+      "OnPC\022.\n\nreport_gps\030\004 \001(\0132\032.cn.ght.protoc" +
+      "ol.ReportGPS\0226\n\016login_response\030\005 \001(\0132\036.c" +
+      "n.ght.protocol.LoginResponse\0228\n\017power_on" +
+      "_pc_cmd\030\006 \001(\0132\037.cn.ght.protocol.PowerOnP" +
+      "CQuery\0227\n\016report_gps_cmd\030\007 \001(\0132\037.cn.ght." +
+      "protocol.ReportGPSQuery\022@\n\024get_pc_list_r" +
+      "esponse\030\017 \001(\0132\".cn.ght.protocol.GetPCLis" +
+      "tResponse\022H\n\030get_module_list_response\030\020 " +
+      "\001(\0132&.cn.ght.protocol.GetModuleListRespo" +
+      "nse\022B\n\025set_power_on_response\030\021 \001(\0132#.cn." +
+      "ght.protocol.SetPowerOnResponse\022C\n\025get_l" +
+      "ocation_response\030\022 \001(\0132$.cn.ght.protocol" +
+      ".GetLocationResponse\022D\n\026get_file_list_re" +
+      "sponse\030\023 \001(\0132$.cn.ght.protocol.GetFileLi" +
+      "stResponse\022A\n\024delete_file_response\030\024 \001(\013" +
+      "2#.cn.ght.protocol.DeleteFileResponse\022D\n" +
+      "\026set_power_off_response\030\025 \001(\0132$.cn.ght.p" +
+      "rotocol.SetPowerOffResponse\022>\n\023get_pc_li" +
+      "st_request\030\010 \001(\0132!.cn.ght.protocol.GetPC" +
+      "ListRequest\022F\n\027get_module_list_request\030\t" +
+      " \001(\0132%.cn.ght.protocol.GetModuleListRequ" +
+      "est\022@\n\024set_power_on_request\030\n \001(\0132\".cn.g" +
+      "ht.protocol.SetPowerOnRequest\022A\n\024get_loc" +
+      "ation_request\030\013 \001(\0132#.cn.ght.protocol.Ge" +
+      "tLocationRequest\022B\n\025get_file_list_reques" +
+      "t\030\014 \001(\0132#.cn.ght.protocol.GetFileListReq" +
+      "uest\022?\n\023delete_file_request\030\r \001(\0132\".cn.g" +
+      "ht.protocol.DeleteFileRequest\022B\n\025set_pow" +
+      "er_off_request\030\016 \001(\0132#.cn.ght.protocol.S" +
+      "etPowerOffRequest*\225\005\n\003MSG\022\022\n\rLogin_Reque" +
+      "st\020\221N\022\023\n\016Login_Response\020\222N\022\027\n\021Power_On_P" +
+      "C_Query\020\241\234\001\022\021\n\013Power_On_PC\020\242\234\001\022\026\n\020Report" +
+      "_GPS_Query\020\243\234\001\022\020\n\nReport_GPS\020\244\234\001\022\025\n\017File" +
+      "_List_Query\020\261\352\001\022\017\n\tFile_List\020\262\352\001\022\027\n\021Dele" +
+      "te_File_Query\020\263\352\001\022\021\n\013Delete_File\020\264\352\001\022\025\n\017" +
+      "Power_Off_Query\020\321\206\003\022\017\n\tPower_Off\020\322\206\003\022\031\n\023" +
+      "Get_PC_List_Request\020\301\270\002\022\032\n\024Get_PC_List_R" +
+      "esponse\020\302\270\002\022\035\n\027Get_Module_List_Request\020\303" +
+      "\270\002\022\036\n\030Get_Module_List_Response\020\304\270\002\022\032\n\024Se" +
+      "t_Power_On_Request\020\305\270\002\022\033\n\025Set_Power_On_R" +
+      "esponse\020\306\270\002\022\033\n\025Get_File_List_Request\020\307\270\002" +
+      "\022\034\n\026Get_File_List_Response\020\310\270\002\022\031\n\023Delete" +
+      "_File_Request\020\311\270\002\022\032\n\024Delete_File_Respons" +
+      "e\020\312\270\002\022\032\n\024Get_Location_Request\020\313\270\002\022\033\n\025Get" +
+      "_Location_Response\020\314\270\002\022\033\n\025Set_Power_Off_" +
+      "Request\020\315\270\002\022\034\n\026Set_Power_Off_Response\020\316\270" +
+      "\002*J\n\006DEVICE\022\021\n\rDeviceAndroid\020\001\022\r\n\tDevice" +
+      "IOS\020\002\022\020\n\014DeviceModule\020\003\022\014\n\010DevicePC\020\004B\rB" +
+      "\013MessageData"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -6025,12 +20215,102 @@ public final class MessageData {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cn_ght_protocol_ReportGPS_descriptor,
         new java.lang.String[] { "DeviceName", "Longitude", "Latitude", });
-    internal_static_cn_ght_protocol_Message_descriptor =
+    internal_static_cn_ght_protocol_GetPCListRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
+    internal_static_cn_ght_protocol_GetPCListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetPCListRequest_descriptor,
+        new java.lang.String[] { "DeviceName", });
+    internal_static_cn_ght_protocol_GetPCListResponse_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_cn_ght_protocol_GetPCListResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetPCListResponse_descriptor,
+        new java.lang.String[] { "PcNames", });
+    internal_static_cn_ght_protocol_GetModuleListRequest_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_cn_ght_protocol_GetModuleListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetModuleListRequest_descriptor,
+        new java.lang.String[] { "DeviceName", });
+    internal_static_cn_ght_protocol_GetModuleListResponse_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_cn_ght_protocol_GetModuleListResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetModuleListResponse_descriptor,
+        new java.lang.String[] { "ModuleNames", });
+    internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_cn_ght_protocol_SetPowerOnRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_SetPowerOnRequest_descriptor,
+        new java.lang.String[] { "DeviceName", "ModuleName", });
+    internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_cn_ght_protocol_SetPowerOnResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_SetPowerOnResponse_descriptor,
+        new java.lang.String[] { "ModuleName", "PowerOnSuccess", });
+    internal_static_cn_ght_protocol_GetLocationRequest_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_cn_ght_protocol_GetLocationRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetLocationRequest_descriptor,
+        new java.lang.String[] { "DeviceName", "ModuleName", });
+    internal_static_cn_ght_protocol_GetLocationResponse_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_cn_ght_protocol_GetLocationResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetLocationResponse_descriptor,
+        new java.lang.String[] { "ModuleName", "Longitude", "Latitude", });
+    internal_static_cn_ght_protocol_GetFileListRequest_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_cn_ght_protocol_GetFileListRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetFileListRequest_descriptor,
+        new java.lang.String[] { "DeviceName", "PcName", "ParentDirectory", });
+    internal_static_cn_ght_protocol_FileInfo_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_cn_ght_protocol_FileInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_FileInfo_descriptor,
+        new java.lang.String[] { "FileName", "FileType", });
+    internal_static_cn_ght_protocol_GetFileListResponse_descriptor =
+      getDescriptor().getMessageTypes().get(16);
+    internal_static_cn_ght_protocol_GetFileListResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_GetFileListResponse_descriptor,
+        new java.lang.String[] { "PcName", "FileInfo", });
+    internal_static_cn_ght_protocol_DeleteFileRequest_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_cn_ght_protocol_DeleteFileRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_DeleteFileRequest_descriptor,
+        new java.lang.String[] { "DeviceName", "PcName", "FileFullPath", "IsDirectory", });
+    internal_static_cn_ght_protocol_DeleteFileResponse_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_cn_ght_protocol_DeleteFileResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_DeleteFileResponse_descriptor,
+        new java.lang.String[] { "PcName", "DeleteSuccess", });
+    internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor =
+      getDescriptor().getMessageTypes().get(19);
+    internal_static_cn_ght_protocol_SetPowerOffRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_SetPowerOffRequest_descriptor,
+        new java.lang.String[] { "DeviceName", "ModuleName", "PcName", });
+    internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor =
+      getDescriptor().getMessageTypes().get(20);
+    internal_static_cn_ght_protocol_SetPowerOffResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cn_ght_protocol_SetPowerOffResponse_descriptor,
+        new java.lang.String[] { "ModuleName", "PcName", "PowerOffSuccess", });
+    internal_static_cn_ght_protocol_Message_descriptor =
+      getDescriptor().getMessageTypes().get(21);
     internal_static_cn_ght_protocol_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cn_ght_protocol_Message_descriptor,
-        new java.lang.String[] { "MsgType", "LoginRequest", "PowerOnPc", "ReportGps", "LoginResponse", "PowerOnPcCmd", "ReportGpsCmd", });
+        new java.lang.String[] { "MsgType", "LoginRequest", "PowerOnPc", "ReportGps", "LoginResponse", "PowerOnPcCmd", "ReportGpsCmd", "GetPcListResponse", "GetModuleListResponse", "SetPowerOnResponse", "GetLocationResponse", "GetFileListResponse", "DeleteFileResponse", "SetPowerOffResponse", "GetPcListRequest", "GetModuleListRequest", "SetPowerOnRequest", "GetLocationRequest", "GetFileListRequest", "DeleteFileRequest", "SetPowerOffRequest", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
