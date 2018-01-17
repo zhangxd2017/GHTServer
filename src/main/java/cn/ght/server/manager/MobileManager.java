@@ -28,6 +28,10 @@ public class MobileManager {
         mobiles = new ArrayList<MobileConnection>();
     }
 
+    public List<MobileConnection> getMobiles() {
+        return mobiles;
+    }
+
     public boolean contains(String deviceName) {
         boolean contains = false;
         for (MobileConnection connection : mobiles) {

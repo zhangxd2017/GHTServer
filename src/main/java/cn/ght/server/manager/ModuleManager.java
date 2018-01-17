@@ -28,6 +28,10 @@ public class ModuleManager {
         modules = new ArrayList<ModuleConnection>();
     }
 
+    public List<ModuleConnection> getModules() {
+        return modules;
+    }
+
     public boolean contains(String deviceName) {
         boolean contains = false;
         for (ModuleConnection connection : modules) {

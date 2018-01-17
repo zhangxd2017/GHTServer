@@ -8,6 +8,8 @@ public class ModuleInfo {
 
     private double latitude;
 
+    private boolean isSleep;
+
     public String getName() {
         return name;
     }
@@ -30,5 +32,13 @@ public class ModuleInfo {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public boolean isSleep() {
+        return isSleep;
+    }
+
+    public void setSleep(boolean sleep) {
+        isSleep = sleep;
     }
 }

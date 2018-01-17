@@ -1,5 +1,6 @@
 package cn.ght.server;
 
+import cn.ght.util.LogUtils;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -42,13 +43,13 @@ public class GHTServer {
             });
             ChannelFuture channelFuture = bootstrap.bind(port).sync();
             if (channelFuture.isSuccess()) {
-                System.out.println("----GHT Server Start----");
+                LogUtils.print("@@@@----GHT Server Start----");
             }
             channelFuture.channel().closeFuture().sync();
         } finally {
             worker.shutdownGracefully();
             boss.shutdownGracefully();
-            System.out.println("----GHT Server Stop----");
+            LogUtils.print("@@@@----GHT Server Stop----");
         }
     }
 
@@ -56,10 +57,10 @@ public class GHTServer {
     public static void main(String[] args) throws InterruptedException {
         int serverPort;
         if (args.length > 0) {
-            System.out.println("port:" + args[0]);
+            LogUtils.print("@@@@port:" + args[0]);
             serverPort = Integer.parseInt(args[0]);
         } else {
-            System.out.println("no port defined, user default 9001");
+            LogUtils.print("@@@@no port defined, user default 9001");
             serverPort = 9001;
         }
         GHTServer server = new GHTServer(serverPort);
