@@ -178,11 +178,11 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                     }
                     break;
                     case MessageType.DELETE_FILE: {
-                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_delete_file\",\"data\":" + cmd.getData() + "}");
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_delete_file\"}");
                     }
                     break;
                     case MessageType.POWER_OFF_PC: {
-                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_off_pc\",\"data\":" + cmd.getData() + "}");
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_off_pc\"}");
                     }
                     break;
                 }
