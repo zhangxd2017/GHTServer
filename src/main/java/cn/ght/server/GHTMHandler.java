@@ -6,6 +6,7 @@ import cn.ght.protocol.MessageType;
 import cn.ght.protocol.RegisterData;
 import cn.ght.protocol.bean.DeviceInfo;
 import cn.ght.protocol.bean.ModuleInfo;
+import cn.ght.protocol.bean.PCCommon;
 import cn.ght.server.bean.*;
 import cn.ght.server.manager.MobileManager;
 import cn.ght.server.manager.ModuleManager;
@@ -53,8 +54,7 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                                             PCConnection pcConnection = new PCConnection(deviceInfo.getDeviceName(), channelHandlerContext);
                                             connection.setPcConnection(pcConnection);
                                             PCManager.getInstance().add(pcConnection);
-                                            //writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
-                                            writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.FILE_LIST, "")));
+                                            writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
                                             //通知给所有的移动端
                                             MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_on_pc\",\"data\":{\"module\":\"" + connection.getDeviceName() + "\",\"pc\":\"" + deviceInfo.getDeviceName() + "\"}}");
                                         }
@@ -142,11 +142,19 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                     }
                     break;
                     case MessageType.GET_FILE_LIST: {
-
+                        PCCommon pc = JSON.parseObject(cmd.getData(), PCCommon.class);
+                        PCConnection connection = PCManager.getInstance().getByName(pc.getName());
+                        if (connection != null) {
+                            writeCmd(connection.getConnectContext(), JSON.toJSONString(new FileListCmd(MessageType.FILE_LIST, pc.getExtraData())));
+                        }
                     }
                     break;
                     case MessageType.SET_DELETE_FILE: {
-
+                        PCCommon pc = JSON.parseObject(cmd.getData(), PCCommon.class);
+                        PCConnection connection = PCManager.getInstance().getByName(pc.getName());
+                        if (connection != null) {
+                            writeCmd(connection.getConnectContext(), JSON.toJSONString(new FileListCmd(MessageType.DELETE_FILE, pc.getExtraData())));
+                        }
                     }
                     break;
                     case MessageType.GET_LOCATION_INFO: {
@@ -158,19 +166,23 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                     }
                     break;
                     case MessageType.SET_POWER_OFF_PC: {
-
+                        PCCommon pc = JSON.parseObject(cmd.getData(), PCCommon.class);
+                        PCConnection connection = PCManager.getInstance().getByName(pc.getName());
+                        if (connection != null) {
+                            writeCmd(connection.getConnectContext(), JSON.toJSONString(new FileListCmd(MessageType.POWER_OFF_PC, pc.getExtraData())));
+                        }
                     }
                     break;
                     case MessageType.FILE_LIST: {
-                        writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.DELETE_FILE, "{\"fileName\":\"SNWriter_LOG\",\"fileType\":1,\"fullPath\":\"C-/SNWriter_LOG\"}")));
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"get_file_list\",\"data\":" + cmd.getData() + "}");
                     }
                     break;
                     case MessageType.DELETE_FILE: {
-                        writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.POWER_OFF_PC, "")));
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_delete_file\",\"data\":" + cmd.getData() + "}");
                     }
                     break;
                     case MessageType.POWER_OFF_PC: {
-
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_off_pc\",\"data\":" + cmd.getData() + "}");
                     }
                     break;
                 }

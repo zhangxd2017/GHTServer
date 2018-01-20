@@ -38,6 +38,19 @@ public class PCManager {
         return contains;
     }
 
+    public PCConnection getByName(String name) {
+        PCConnection pcConnection = null;
+        synchronized (locker) {
+            for (PCConnection connection : pcs) {
+                if (connection.getDeviceName().equals(name)) {
+                    pcConnection = connection;
+                    break;
+                }
+            }
+        }
+        return pcConnection;
+    }
+
     public PCConnection getByContext(ChannelHandlerContext channelHandlerContext) {
         PCConnection pcConnection = null;
         synchronized (locker) {
