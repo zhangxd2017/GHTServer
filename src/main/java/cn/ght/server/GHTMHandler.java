@@ -53,7 +53,8 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                                             PCConnection pcConnection = new PCConnection(deviceInfo.getDeviceName(), channelHandlerContext);
                                             connection.setPcConnection(pcConnection);
                                             PCManager.getInstance().add(pcConnection);
-                                            writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
+                                            //writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
+                                            writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.FILE_LIST, "")));
                                             //通知给所有的移动端
                                             MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_on_pc\",\"data\":{\"module\":\"" + connection.getDeviceName() + "\",\"pc\":\"" + deviceInfo.getDeviceName() + "\"}}");
                                         }
@@ -161,11 +162,11 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                     }
                     break;
                     case MessageType.FILE_LIST: {
-
+                        writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.DELETE_FILE, "{\"fileName\":\"SNWriter_LOG\",\"fileType\":1,\"fullPath\":\"C-/SNWriter_LOG\"}")));
                     }
                     break;
                     case MessageType.DELETE_FILE: {
-
+                        writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.POWER_OFF_PC, "")));
                     }
                     break;
                     case MessageType.POWER_OFF_PC: {
