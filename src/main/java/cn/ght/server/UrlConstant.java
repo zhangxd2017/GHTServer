@@ -26,6 +26,9 @@ public class UrlConstant {
                 LAC = info.substring(info.indexOf(":") + 1);
             } else if (info.startsWith("CELL_ID")) {
                 CI = info.substring(info.indexOf(":") + 1);
+                if (CI.startsWith("0")) {
+                    CI = CI.substring(1);
+                }
             }
         }
 

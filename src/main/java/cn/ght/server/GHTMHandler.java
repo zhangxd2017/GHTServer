@@ -82,6 +82,13 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                             }
                         }
                         break;
+                    case MessageType.REPORT_STATE: {
+                        ModuleConnection connection = ModuleManager.getInstance().getByContext(channelHandlerContext);
+                        if (connection != null) {
+                            MobileManager.getInstance().notityAllMobile(JSON.toJSONString(new MessageData(MessageType.REPORT_STATE, JSON.toJSONString(new PCCommon(connection.getDeviceName(), cmd.getData())))));
+                        }
+                    }
+                    break;
                     case MessageType.REPORT_LBS: {
                         ModuleConnection connection = ModuleManager.getInstance().getByContext(channelHandlerContext);
                         if (connection != null) {
@@ -91,6 +98,7 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                             connection.getLocationInfo().setReportLBSData(cmd.getData());
                             //根据基站信息查询GPS位置
                             String urlStr = UrlConstant.getUrl(cmd.getData());
+                            System.out.println("------URL:" + urlStr);
                             if (!StringUtils.isEmpty(urlStr)) {
                                 URL url = new URL(urlStr);
                                 try {

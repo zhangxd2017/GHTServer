@@ -13,6 +13,7 @@ public class MessageType {
      */
     public static final String POWER_ON_PC = "power_on_pc";
     public static final String REPORT_LBS = "report_lbs";
+    public static final String REPORT_STATE = "report_state";
 
     /**
      * 服务器与PC客户端协议CMD字段
