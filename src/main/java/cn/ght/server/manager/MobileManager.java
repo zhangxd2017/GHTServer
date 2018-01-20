@@ -1,6 +1,7 @@
 package cn.ght.server.manager;
 
 import cn.ght.server.bean.MobileConnection;
+import cn.ght.util.LogUtils;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.util.ArrayList;
@@ -71,5 +72,19 @@ public class MobileManager {
         synchronized (locker) {
             mobiles.remove(mobileConnection);
         }
+    }
+
+    public void notityAllMobile(String data) {
+        synchronized (locker) {
+            for (MobileConnection mobile : mobiles) {
+                writeCmd(mobile.getConnectContext(), data);
+            }
+        }
+    }
+
+    private void writeCmd(ChannelHandlerContext channelHandlerContext, String cmd) {
+        LogUtils.print("--Message To:" + channelHandlerContext.channel().toString());
+        LogUtils.print("    " + cmd);
+        channelHandlerContext.writeAndFlush(cmd);
     }
 }

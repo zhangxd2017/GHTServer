@@ -43,7 +43,21 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                             DeviceInfo deviceInfo = JSON.parseObject(cmd.getData(), DeviceInfo.class);
                             switch (deviceInfo.getDeviceType()) {
                                 case DeviceInfo.DEVICE_TYPE_PC: {
-
+                                    if (PCManager.getInstance().contains(deviceInfo.getDeviceName())) {
+                                        writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_FAIL, "Already Register:" + deviceInfo.getDeviceName())))));
+                                        channelHandlerContext.close();
+                                    } else {
+                                        ModuleConnection connection = ModuleManager.getInstance().getByName(deviceInfo.getImei());
+                                        if (connection != null) {
+                                            LogUtils.print("--Bind PC:" + deviceInfo.getDeviceName() + ",Module:" + deviceInfo.getImei());
+                                            PCConnection pcConnection = new PCConnection(deviceInfo.getDeviceName(), channelHandlerContext);
+                                            connection.setPcConnection(pcConnection);
+                                            PCManager.getInstance().add(pcConnection);
+                                            writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
+                                            //通知给所有的移动端
+                                            MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_on_pc\",\"data\":{\"module\":\"" + connection.getDeviceName() + "\",\"pc\":\"" + deviceInfo.getDeviceName() + "\"}}");
+                                        }
+                                    }
                                 }
                                 break;
                                 case DeviceInfo.DEVICE_TYPE_MOBILE: {
@@ -51,6 +65,7 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                                         writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_FAIL, "Already Register:" + deviceInfo.getDeviceName())))));
                                         channelHandlerContext.close();
                                     } else {
+                                        MobileManager.getInstance().add(deviceInfo.getDeviceName(), channelHandlerContext);
                                         writeCmd(channelHandlerContext, JSON.toJSONString(new MessageData(MessageType.REGISTER, JSON.toJSONString(new RegisterData(RegisterData.STATE_SUCCESS, "")))));
                                     }
                                 }
@@ -109,10 +124,6 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                     }
                     break;
                     case MessageType.POWER_ON_PC: {
-                        ModuleConnection connection = ModuleManager.getInstance().getByContext(channelHandlerContext);
-                        if (connection != null) {
-
-                        }
                     }
                     break;
                     case MessageType.GET_MODULE_LIST: { //移动端发送过来的

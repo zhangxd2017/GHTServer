@@ -13,6 +13,8 @@ public class DeviceInfo {
 
     private int deviceType;
 
+    private String imei;
+
     public DeviceInfo() {
     }
 
@@ -35,5 +37,13 @@ public class DeviceInfo {
 
     public void setDeviceType(int deviceType) {
         this.deviceType = deviceType;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
     }
 }

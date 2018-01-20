@@ -18,4 +18,5 @@ public class MessageModel {
     /**
      * 服务器与移动客户端的协议
      */
+    public static final String SET_POWER_ON_CMD = "{\"cmd\":\"set_power_on_pc\"}";
 }

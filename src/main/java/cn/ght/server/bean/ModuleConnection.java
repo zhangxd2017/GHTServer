@@ -6,6 +6,8 @@ public class ModuleConnection extends DeviceConnection {
 
     private LocationInfo locationInfo;
 
+    private PCConnection pcConnection;
+
     public ModuleConnection() {
     }
 
@@ -19,5 +21,13 @@ public class ModuleConnection extends DeviceConnection {
 
     public void setLocationInfo(LocationInfo locationInfo) {
         this.locationInfo = locationInfo;
+    }
+
+    public PCConnection getPcConnection() {
+        return pcConnection;
+    }
+
+    public void setPcConnection(PCConnection pcConnection) {
+        this.pcConnection = pcConnection;
     }
 }
