@@ -16,22 +16,29 @@ import cn.ght.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.util.HashedWheelTimer;
+import io.netty.util.Timeout;
+import io.netty.util.Timer;
+import io.netty.util.TimerTask;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class GHTMHandler extends SimpleChannelInboundHandler {
 
+
+    private Timer timer = null;
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
     }
 
-    protected void messageReceived(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
+    protected void messageReceived(final ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
         LogUtils.print("--Message From:" + channelHandlerContext.channel().toString());
         LogUtils.print("    " + o.toString());
         if (o instanceof String) {
@@ -83,6 +90,19 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                         }
                         break;
                     case MessageType.REPORT_STATE: {
+                        if (timer != null) {
+                            System.out.println("stop timer");
+                            timer.stop();
+                            timer = null;
+                        }
+                        System.out.println("start timer");
+                        timer = new HashedWheelTimer();
+                        timer.newTimeout(new TimerTask() {
+                            @Override
+                            public void run(Timeout timeout) throws Exception {
+                                channelHandlerContext.close();
+                            }
+                        }, 10, TimeUnit.SECONDS);
                         ModuleConnection connection = ModuleManager.getInstance().getByContext(channelHandlerContext);
                         if (connection != null) {
                             MobileManager.getInstance().notityAllMobile(JSON.toJSONString(new MessageData(MessageType.REPORT_STATE, JSON.toJSONString(new PCCommon(connection.getDeviceName(), cmd.getData())))));
@@ -208,6 +228,10 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
         DeviceConnection deviceConnection;
         deviceConnection = ModuleManager.getInstance().getByContext(channelHandlerContext);
         if (deviceConnection != null) {
+            if (timer != null) {
+                timer.stop();
+                timer = null;
+            }
             LogUtils.print("--Disconnect:" + channelHandlerContext.channel().toString());
             LogUtils.print("    Remove Module:" + deviceConnection.getDeviceName());
             ModuleManager.getInstance().remove((ModuleConnection) deviceConnection);
