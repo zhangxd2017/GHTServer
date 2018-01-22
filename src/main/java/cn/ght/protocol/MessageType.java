@@ -21,7 +21,7 @@ public class MessageType {
     public static final String FILE_LIST = "file_list";
     public static final String DELETE_FILE = "delete_file";
     public static final String POWER_OFF_PC = "power_off_pc";
-
+    public static final String LOG_OUT = "log_out";
     /**
      * 服务器与移动客户端协议CMD字段
      */
@@ -31,4 +31,5 @@ public class MessageType {
     public static final String SET_DELETE_FILE = "set_delete_file";
     public static final String GET_LOCATION_INFO = "get_location_info";
     public static final String SET_POWER_OFF_PC = "set_power_off_pc";
+    public static final String SET_LOG_OUT = "set_log_out";
 }

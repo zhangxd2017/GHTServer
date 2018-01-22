@@ -213,6 +213,18 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                         MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_power_off_pc\"}");
                     }
                     break;
+                    case MessageType.LOG_OUT: {
+                        MobileManager.getInstance().notityAllMobile("{\"cmd\":\"set_log_out\",\"data\":" + cmd.getData() + "}");
+                    }
+                    break;
+                    case MessageType.SET_LOG_OUT: {
+                        PCCommon pc = JSON.parseObject(cmd.getData(), PCCommon.class);
+                        PCConnection connection = PCManager.getInstance().getByName(pc.getName());
+                        if (connection != null) {
+                            writeCmd(connection.getConnectContext(), JSON.toJSONString(new FileListCmd(MessageType.LOG_OUT, pc.getExtraData())));
+                        }
+                    }
+                    break;
                 }
             }
         }
