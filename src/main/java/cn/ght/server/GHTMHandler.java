@@ -102,7 +102,7 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                             public void run(Timeout timeout) throws Exception {
                                 channelHandlerContext.close();
                             }
-                        }, 10, TimeUnit.SECONDS);
+                        }, 20, TimeUnit.SECONDS);
                         ModuleConnection connection = ModuleManager.getInstance().getByContext(channelHandlerContext);
                         if (connection != null) {
                             MobileManager.getInstance().notityAllMobile(JSON.toJSONString(new MessageData(MessageType.REPORT_STATE, JSON.toJSONString(new PCCommon(connection.getDeviceName(), cmd.getData())))));

@@ -36,7 +36,7 @@ public class UrlConstant {
             return "";
         }
 
-        return String.format(Locale.getDefault(), "oid=7144&key=736E17D9DA098076ABAC84A32FB0A1B2&bs=%s,%s,%s,%s&hex=16&output=json", MCC, MNC, LAC, CI);
+        return String.format(Locale.getDefault(), "oid=7242&key=CD4761DA18F87458756EB8BF538636DB&bs=%s,%s,%s,%s&hex=16&output=json", MCC, MNC, LAC, CI);
     }
 
     public static String getUrl(String lbsInfo) {
