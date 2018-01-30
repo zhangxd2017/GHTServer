@@ -22,6 +22,7 @@ public class MessageType {
     public static final String DELETE_FILE = "delete_file";
     public static final String POWER_OFF_PC = "power_off_pc";
     public static final String LOG_OUT = "log_out";
+    public static final String HEART_BEAT = "heart_beat";
     /**
      * 服务器与移动客户端协议CMD字段
      */

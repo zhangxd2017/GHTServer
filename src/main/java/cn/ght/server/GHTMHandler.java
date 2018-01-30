@@ -32,6 +32,7 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
 
 
     private Timer timer = null;
+    private Timer pcTimer = null;
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
@@ -89,6 +90,22 @@ public class GHTMHandler extends SimpleChannelInboundHandler {
                             }
                         }
                         break;
+                    case MessageType.HEART_BEAT: {
+                        if (pcTimer != null) {
+                            System.out.println("stop pcTimer");
+                            pcTimer.stop();
+                            pcTimer = null;
+                        }
+                        System.out.println("start pcTimer");
+                        pcTimer = new HashedWheelTimer();
+                        pcTimer.newTimeout(new TimerTask() {
+                            @Override
+                            public void run(Timeout timeout) throws Exception {
+                                channelHandlerContext.close();
+                            }
+                        }, 10, TimeUnit.SECONDS);
+                    }
+                    break;
                     case MessageType.REPORT_STATE: {
                         if (timer != null) {
                             System.out.println("stop timer");
