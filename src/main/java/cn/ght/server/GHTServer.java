@@ -6,8 +6,13 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.Delimiters;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
+import io.netty.handler.ssl.SslHandler;
+
+import javax.net.ssl.SSLEngine;
 
 public class GHTServer {
 
@@ -36,10 +41,15 @@ public class GHTServer {
             bootstrap.childOption(ChannelOption.SO_KEEPALIVE, true);
             bootstrap.childHandler(new ChannelInitializer<SocketChannel>() {
                 protected void initChannel(SocketChannel socketChannel) throws Exception {
+                    //加入SSL
+                    SSLEngine engine = GHTSSLContextFactory.getServerContext().createSSLEngine();
+                    engine.setUseClientMode(false);
+                    engine.setNeedClientAuth(false);
                     ChannelPipeline channelPipeline = socketChannel.pipeline();
-                    channelPipeline.addLast(new StringDecoder());
-                    channelPipeline.addLast(new StringEncoder());
-                    channelPipeline.addLast(new GHTMHandler());
+                    channelPipeline.addFirst("ssl", new SslHandler(engine));
+                    channelPipeline.addLast("encoder", new GHTEncoder());
+                    channelPipeline.addLast("decoder", new GHTDecoder());
+                    channelPipeline.addLast(new GHTHandler());
                 }
             });
             ChannelFuture channelFuture = bootstrap.bind(port).sync();

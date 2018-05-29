@@ -1,90 +1,28 @@
 package cn.ght.server.manager;
 
-import cn.ght.server.bean.MobileConnection;
-import cn.ght.util.LogUtils;
+import cn.ght.protocol.GHTMessage;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MobileManager {
-
-    private static MobileManager instance = null;
-    private static final Object locker = new Object();
-
-    private List<MobileConnection> mobiles;
+    private static MobileManager ourInstance = new MobileManager();
 
     public static MobileManager getInstance() {
-        if (instance == null) {
-            synchronized (locker) {
-                if (instance == null) {
-                    instance = new MobileManager();
-                }
-            }
-        }
-        return instance;
+        return ourInstance;
     }
 
     private MobileManager() {
-        mobiles = new ArrayList<MobileConnection>();
+        mobileList = new ArrayList<>();
     }
 
-    public List<MobileConnection> getMobiles() {
-        return mobiles;
+    private List<ChannelHandlerContext> mobileList;
+
+    public void sendMessage(GHTMessage message) {
+
     }
 
-    public boolean contains(String deviceName) {
-        boolean contains = false;
-        for (MobileConnection connection : mobiles) {
-            if (connection.getDeviceName().equals(deviceName)) {
-                contains = true;
-                break;
-            }
-        }
-        return contains;
-    }
-
-    public void add(MobileConnection mobileConnection) {
-        synchronized (locker) {
-            mobiles.add(mobileConnection);
-        }
-    }
-
-    public void add(String deviceName, ChannelHandlerContext channelHandlerContext) {
-        add(new MobileConnection(deviceName, channelHandlerContext));
-    }
-
-    public MobileConnection getByContext(ChannelHandlerContext channelHandlerContext) {
-        MobileConnection mobileConnection = null;
-        synchronized (locker) {
-            for (MobileConnection connection : mobiles) {
-                if (connection.getConnectContext().equals(channelHandlerContext)) {
-                    mobileConnection = connection;
-                    break;
-                }
-            }
-        }
-        return mobileConnection;
-    }
-
-
-    public void remove(MobileConnection mobileConnection) {
-        synchronized (locker) {
-            mobiles.remove(mobileConnection);
-        }
-    }
-
-    public void notityAllMobile(String data) {
-        synchronized (locker) {
-            for (MobileConnection mobile : mobiles) {
-                writeCmd(mobile.getConnectContext(), data);
-            }
-        }
-    }
-
-    private void writeCmd(ChannelHandlerContext channelHandlerContext, String cmd) {
-        LogUtils.print("--Message To:" + channelHandlerContext.channel().toString());
-        LogUtils.print("    " + cmd);
-        channelHandlerContext.writeAndFlush(cmd);
+    public void addMobile(ChannelHandlerContext channelHandlerContext) {
     }
 }

@@ -1,0 +1,14 @@
+keytool -genkey -alias ght -keysize 2048 -validity 365 -keyalg RSA -dname "CN=localhost" -keypass ght123 -storepass ght123 -keystore ght.jks
+
+
+keytool -export -alias ght -keystore ght.jks -storepass ght123 -file ght.cer
+
+
+keytool -genkey -alias client -keysize 2048 -validity 365  -keyalg RSA -dname "CN=localhost" -keypass ght123 -storepass ght123 -keystore client.jks
+
+
+keytool -import -trustcacerts -alias ght -file ght.cer -storepass ght123 -keystore client.jks
+
+ssh -p 28147 root@66.98.126.120
+
+scp -P 28147 target/GHTServer-1.4-SNAPSHOT.jar root@66.98.126.120:/root/GHT
